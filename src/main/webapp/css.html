@@ -11,6 +11,15 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
         <link rel="shortcut icon" type="image/png" href="photos/clases.png">
         <link rel="stylesheet" href="css/bordes-font_style.css">
         <link rel="stylesheet" href="css/fondo_style.css">
+    <style>
+            p{
+                font-family: Arial;
+                text-align:  justify;
+            }
+            h1,h2,h3,h4,h5{
+                font-family: Helvetica;
+
+            </style>
     </head>
     
     
@@ -33,10 +42,33 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
                 </ul>
             </nav>
         </header>
-        
+        <section id="main-content">
+            <header>
+                <hr>
+                <h1 style = "text-align: center;
+                    font-family: Arial Black ;
+                    color: gray" >CSS</h1>
+                    <hr>
+                </header>
+                <div class="content">
+                    <p>Las hojas de estilo son un mecanismo para separar el formato de representación y presentación del contenido. Eso se consigue asociando atributos de presentación a cada una de las etiquetas de HTML o a subclases de éstas.</p>
+                    <p>Por ejemplo, si deseamos que todos los párrafos de nuestro documento (definidos por P /P) tengan el fondo rojo y el texto en amarillo usaremos la siguiente definición:</p>
+                     <div class="logo4">
+                         <img src="photos/example4.jpg" alt=""/>
+                     </div>
+                    <br>
+                    <p>Para indicar qué estilos debemos usar en una página, disponemos de la etiqueta STYLE, que nos permite especificarlos in situ, y de otra etiqueta LINK,que nos permite indicar un fichero externo que contendrá nuestros estilos.</p>
+                    <p>La etiqueta STYLE tiene que estar en la cabecera de la página. Dispondremos de un parámetro TYPE que nos permite indicar qué sintaxis usaremos para definir los estilos, que en nuestro caso será text/css. La etiqueta LINK, para poder definir una hoja de estilos externa, tiene la siguiente apariencia:</p>
+                    <div class="logo5">
+                        <img src="photos/Imagen6.jpg" alt=""/>
+                    </div>
+                    <p>De hecho, es muy recomendable el uso de la etiqueta LINK para la definición de las hojas de estilo asociadas a una página, ya que de ese modo facilitaremos el mantenimiento, al concentrarse en un único fichero todos los estilos de un sitio web en lugar de estar replicados en cada una de las páginas.</p>
+                </div>
+            </section>
+
         <footer id="main-footer">
                 <p style = "text-align: center ">&copy; 2022, Sitio web creado por Kevin Ponce & Donald Silva</p>
             </footer>
-        
+       
     </body>
 </html>
