@@ -114,4 +114,11 @@ width: 99.5%;
             margin-left: 21%;
             margin-right: 21%;
 }
-
+.ejemplo {margin: 0px 40px 0px 0px;
+    color: black;
+    background-color: lightgray;
+}
+.logo img{
+    width: 200px;
+    margin: 10px 260px;
+}
