@@ -1,27 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="ES">
     <head>
         <title>Proyecto Aula</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" href="css/bar_style.css">
+        <link rel="shortcut icon" type="image/png" href="photos/clases.png">
 
-    </head>
+        <link rel="stylesheet" href="css/bordes-font_style.css">
+        <link rel="stylesheet" href="css/fondo_style.css">
+        <style>
+            p{
+                font-family: Arial;
+                text-align:  justify;
+            }
+            h1,h2,h3,h4,h5{
+                font-family: Helvetica;
 
-    <body>
-        <nav>
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class="fas fa-bars"></i>
-            </label>
-            <a href="#" class="enlace">
-                <img src="photos/logo_home.png" alt="" class="logo">
-            </a>
-            <ul>
-                <li><a class="active" href="#">Inicio</a></li>
-                <li><a href="#">HTML</a></li>
-                <li><a href="#">CSS</a></li>
-                <li><a href="#">JSS</a></li>
-            </ul>
-        </nav>
-    </body>
-</html>
+            </style>
+        </head>
+
+        <header id="main-header">
+            <a id="logo-header" href="index.html">
+                <span class="site-name">WEB | PROYECTO </span>
+                <span class="site-desc">HTML | CSS | JS</span>
+            </a> 
+            <nav>
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="html.html">HTML</a></li>
+                    <li><a href="css.html">CSS</a></li>
+                    <li><a href="js.html">JS</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <section id="main-content">
+            <header>
+                <hr>
+                <h1 style = "text-align: center;
+                    font-family: Arial Black ;
+                    color: gray" >Aplicaciones Web</h1>
+                    <hr>
+                </header>
+
+                <img src="http://www.cursosgis.com/wp-content/uploads/2017/06/lenguajes_1.png" alt="HTML-CSS-JS" />
+
+                <div class="content">
+                    <p>Bienvenidos a este sitio web, esta web esta destinado para el uso de docentes, donde podrán ver sus datos personales, visualizar sus experiencias en la profesión y en docencia, estudios realizados, las capacitaciones e investigaciones como: prouectos de investigación y las publicaciones realizadas. 
+                    </p>
+                </div>
+            </section>
+
+            <footer id="main-footer">
+                <p style = "text-align: center ">&copy; 2022, Sitio web creado por Kevin Ponce & Donald Silva</p>
+            </footer>
+        </body>       
+    </html>
