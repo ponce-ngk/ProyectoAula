@@ -11,6 +11,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
         <link rel="shortcut icon" type="image/png" href="photos/clases.png">
         <link rel="stylesheet" href="css/bordes-font_style.css">
         <link rel="stylesheet" href="css/fondo_style.css">
+        <link rel="stylesheet" href="css/new_menu.css">
     <style>
             p{
                 font-family: Arial;
@@ -25,23 +26,101 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
     
     
     <body>
-        
-        
-        <header id="main-header">
-            <a id="logo-header" href="index.html">
-                <span class="site-name">WEB | PROYECTO </span>
-                <span class="site-desc">HTML | CSS | JS</span>
-            </a> 
-            <nav>
+        <div class="container">
+            <div class="navegation">
                 <ul>
-                    <li><a href="index.html">INICIO</a></li>
-                    <li><a href="evolucion.html">EVOLUCIÓN</a></li>
-                    <li><a href="html.html">HTML</a></li>
-                    <li><a href="css.html">CSS</a></li>
-                    <li><a href="js.html">JS</a></li>
+                    <li>
+                        <b></b>
+                        <b></b>
+                        <a href="#">
+                            <samp class="icon"></samp>
+                            <samp class="title">WEB | PROYECTO AULA</samp>
+                        </a>
+                    </li>
+                    <li  class="list active">
+                        <b></b>
+                        <b></b>
+                        <a href="index.html">
+                            <samp class="icon">
+                                <ion-icon name="home-outline"></ion-icon>
+                            </samp>
+                            <samp class="title">Inicio</samp>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <b></b>
+                        <b></b>
+                        <a href="evolucion.html">
+                            <samp class="icon">
+                                <ion-icon name="cellular-outline"></ion-icon>
+                            </samp>
+                            <samp class="title">Evolución de HTML</samp>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <b></b>
+                        <b></b>
+                        <a href="html.html">
+                            <samp class="icon">
+                                <ion-icon name="logo-html5"></ion-icon>
+                            </samp>
+                            <samp class="title">HTML</samp>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <b></b>
+                        <b></b>
+                        <a href="css.html">
+                            <samp class="icon">
+                                <ion-icon name="logo-css3"></ion-icon>
+                            </samp>
+                            <samp class="title">CSS</samp>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <b></b>
+                        <b></b>
+                        <a href="js.html">
+                            <samp class="icon">
+                                <ion-icon name="logo-nodejs"></ion-icon>
+                            </samp>
+                            <samp class="title">JSP</samp>
+                        </a>
+                    </li>
                 </ul>
-            </nav>
-        </header>
+            </div>
+        </div>
+        <div class="toggle">
+            <ion-icon name="menu-outline" class="open"></ion-icon>
+            <ion-icon name="lock-closed-outline" class="close"></ion-icon>
+        </div>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script>
+            //cuadrito
+            let menutoggle = document.querySelector('.toggle');
+            let navegation = document.querySelector('.navegation');
+            menutoggle.onclick = function(){
+                menutoggle.classList.toggle('active');
+                navegation.classList.toggle('active');
+            }
+            
+            //añadir los item
+            let list = document.querySelectorAll('.list');
+            for(let i=0; i<list.length; i++)
+            {
+                list[i].onclick = function()
+                {
+                    let j=0;
+                    while(j < list.length){
+                        list[j++].className = 'list';
+                    }
+                    list[i].className = 'list active';
+                }
+            }
+        </script>
+            
+    </body>
         <section id="main-content">
             <header>
                 <hr>
