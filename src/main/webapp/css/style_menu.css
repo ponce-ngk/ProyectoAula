@@ -250,8 +250,8 @@ body{
 .home-section .home-content .text{
   font-size: 26px;
   font-weight: 600;
+  padding: 30px;
 }
-
 @media screen and (max-width: 400px){
   .sidebar{
     width: 240px;
@@ -276,4 +276,15 @@ body{
     left: 78px;
     width: calc(100% - 78px);
   }
+}
+.arriba{
+    display: inline-block;
+    padding: 20px;
+    background: #024959; 
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
 }
