@@ -278,7 +278,7 @@ body{
   }
 }
 .arriba{
-    display: inline-block;
+    display: none;
     padding: 20px;
     background: #024959; 
     font-size: 20px;
