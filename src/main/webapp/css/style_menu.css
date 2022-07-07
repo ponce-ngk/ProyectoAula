@@ -228,6 +228,13 @@ body{
 .sidebar .profile-details .job{
     font-size: 12px;
 }
+/*.home-section{
+    background: white;
+    width: 90%;
+    max-width: 1000px;
+    margin: 10px auto;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+}*/
 .home-section{
     position: relative;
 
@@ -285,16 +292,19 @@ body{
         width: calc(100% - 78px);
     }
 }
+
+
 .arriba{
     display: none;
-    padding: 20px;
-    background: #024959;
-    font-size: 20px;
+    padding: 13px;
+    background: #11101D;
+    font-size: 13px;
     color: #fff;
     cursor: pointer;
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 25px;
 }
 h1 {
     font-size: 2.3em;
@@ -306,57 +316,14 @@ h1 {
 
 p {
     margin: 0 0 1.5em 0;
+    text-align: justify;
 }
 
 img {
     max-width: 100%;
     height: auto;
 }
-
-
-
-
-#main-content {
-    background: white;
-    width: 90%;
-    max-width: 800px;
-    margin: 10px auto;
-    box-shadow: 0 0 10px rgba(0,0,0,.1);
-}
-
-#main-content header,
-#main-content .content {
-    padding: 20px;
-}
-
-
-#main-header {
-    background: #023877;
-    color: white;
-    height: 80px;
-}
-#main-header a {
-    color: white;
-}
-#main-content {
-    background: white;
-    width: 90%;
-    max-width: 800px;
-    margin: 10px auto;
-    box-shadow: 0 0 10px rgba(0,0,0,.1);
-}
-
-#main-content header,
-#main-content .content {
-    padding: 20px;
-}
-#main-header {
-    background: #333;
-    color: white;
-    height: 80px;
-
-    width: 100%; 
-    left: 0; 
-    top: 0; 
-    position: fixed; 
+div{
+    align-content: center;
+    
 }
