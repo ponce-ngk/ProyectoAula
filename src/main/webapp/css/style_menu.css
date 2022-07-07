@@ -342,3 +342,13 @@ img {
 div{
     align-content: center;
 }
+
+.cajon-ejemplo{
+    background: white;
+    width: 70%;
+    max-width: 800px;
+    margin: 10px auto;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    text-align: left;
+}
+.hljs-tag .hljs-name{color:#63a35c}.hljs-tag .hljs-attr{color:#795da3}

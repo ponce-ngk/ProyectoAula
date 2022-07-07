@@ -1,15 +1,148 @@
 <!DOCTYPE html>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
--->
-<html>
+<html lang="ES" dir="ltr">
     <head>
-        <title>TODO supply a title</title>
+
         <meta charset="UTF-8">
+        <title> JS | JavaScript </title>
+        <link rel="shortcut icon" type="image/png" href="../../images/clases.png">
+
+        <link rel="stylesheet" href="../../css/style_menu.css">
+        <!-- Boxiocns CDN Link -->
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script src="../../js/Arriba.js"></script>
     </head>
+
     <body>
-        <div>TODO write content</div>
+        <div class="sidebar close">
+            <div class="logo-details">
+                <a href="../../index.html">
+                    <i class='bx bxs-home'></i>
+                    <span class="logo_name">Inicio</span>
+                </a>
+            </div>
+
+            <ul class="nav-links">
+                <li>
+
+                    <div class="iocn-link">
+                        <a href="../../htmls/evolucion/introduccion_web.html">
+                            <i class='bx bx-bar-chart-alt' ></i>
+                            <span class="link_name">Evolución</span>
+                        </a>
+                        <i class='bx bxs-chevron-down arrow' ></i>
+                    </div>
+                    <ul class="sub-menu">
+                        <li><a class="link_name" href="../../htmls/evolucion/introduccion_web.html">Evolución</a></li>
+                        <li><a href="../../htmls/evolucion/web1_estatica.html">Web 1.0</a></li>
+                        <li><a href="../../htmls/evolucion/web2_social.html">Web 2.0</a></li>
+                        <li><a href="../../htmls/evolucion/web3_semantica.html">Web 3.0</a></li>
+                        <li><a href="../../htmls/evolucion/web4_internet_de_las_cosas.html">Web 4.0</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <div class="iocn-link">
+                        <a href="../../htmls/evolucion/introduccion_html.html">
+                            <i class='bx bxl-html5' ></i>
+                            <span class="link_name">HTML</span>
+                        </a>
+                        <i class='bx bxs-chevron-down arrow' ></i>
+                    </div>
+                    <ul class="sub-menu">
+                        <li><a class="link_name" href="../../htmls/html/introduccion_html.html">HTML</a></li>
+                        <li><a href="#">HTML1</a></li>
+                        <li><a href="#">HTML2</a></li>
+                        <li><a href="#">HTML3</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <div class="iocn-link">
+                        <a href="../../htmls/css/introduccion_css.html">
+                            <i class='bx bxl-css3' ></i>
+                            <span class="link_name">CSS</span>
+                        </a>
+                        <i class='bx bxs-chevron-down arrow' ></i>
+                    </div>
+                    <ul class="sub-menu">
+                        <li><a class="link_name" href="../../htmls/css/introduccion_css.html">CSS</a></li>
+                        <li><a href="../../htmls/css/css1.html">Historia de CSS</a></li>
+                        <li><a href="../../htmls/css/cssEspecf.html">Especificación oficial</a></li>
+                        <li><a href="../../htmls/css/cssarchivo externo.html">CSS en un archivo externo</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <div class="iocn-link">
+                        <a href="../../htmls/js/introduccion_js.html">
+                            <i class='bx bxl-javascript'></i>
+                            <span class="link_name">JS</span>
+                        </a>
+                        <i class='bx bxs-chevron-down arrow' ></i>
+                    </div>
+                    <ul class="sub-menu">
+                        <li><a class="link_name" href="../../htmls/js/introduccion_js.html">JS</a></li>
+                        <!--<li><a href="#">JS1</a></li>
+                        <li><a href="#">JS2</a></li>
+                        <li><a href="#">JS3</a></li>-->
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class='bx bx-cog' ></i>
+                        <span class="link_name">Ajustes</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="#">Ajustes</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+
+        <section class="home-section">
+            <div class="home-content">
+                <i class='bx bx-menu' ></i>
+                <span class="text">Introducción a JavaScript</span>
+                <span class="arriba bx bxs-up-arrow"></span>
+
+                <article>
+                    <div align="center">
+                        <img  src="https://niixer.com/wp-content/uploads/2020/11/javascript.png" width="410" height="400"  alt="www" />
+                    </div>
+
+                    <h1>Definición</h1>
+                    <p><strong>JavaScript</strong> es un lenguaje de programación multiplataforma orientado a objetos que se utiliza para hacer que las páginas web sean interactivas (p. ej., Que tienen animaciones complejas, botones en los que se puede hacer clic, menús emergentes, etc.). También hay versiones de JavaScript de lado del servidor más avanzadas, como Node.js, que te permiten agregar más funcionalidad a un sitio web que simplemente descargar archivos (como la colaboración en tiempo real entre varias computadoras). Dentro de un entorno (por ejemplo, un navegador web), JavaScript se puede conectar a los objetos de su entorno para proporcionar control programático sobre ellos.</p>
+                    <hr> 
+                    <h2>Los primeros pasos en  JavaScript</h2>
+                    <hr>
+                    <p>Hola Mundo! No se deroga la regla tradicional de que todos los tutoriales de programación comenzarán mostrando el texto "Hello World!", ("¡Hola Mundo!" en español) al usuario. A continuación se muestra un programa HTML simple que contiene la instrucción Javascript, situada dentro de un elemento</p>
+                    <div class="cajon-ejemplo">
+                        <pre class="html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/1999/xhtml"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"Content-Type"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"text/html; charset=iso-8859-1"</span> /&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>El primer script<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+
+                        <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text/javascript"</span>&gt;</span><span class="actionscript">
+                        alert(<span class="hljs-string">"Hola Mundo!"</span>);
+                        </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+
+                        <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Esta página contiene el primer script<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></pre>
+                    </div>
+                    <p>text</p>
+                </article>
+            </div>
+            <script src="../../js/style_menu.js"></script>
+
+        </section>
+
     </body>
 </html>
