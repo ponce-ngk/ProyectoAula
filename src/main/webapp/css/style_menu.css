@@ -244,6 +244,7 @@ body{
     transition: all 0.5s ease;
     padding: 12px;
 }
+
 .sidebar.close ~ .home-section{
     left: 78px;
     width: calc(100% - 78px);
@@ -351,4 +352,5 @@ div{
     box-shadow: 0 0 10px rgba(0,0,0,.1);
     text-align: left;
 }
+
 .hljs-tag .hljs-name{color:#63a35c}.hljs-tag .hljs-attr{color:#795da3}
