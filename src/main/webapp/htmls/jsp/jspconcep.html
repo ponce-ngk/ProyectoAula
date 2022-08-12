@@ -90,7 +90,19 @@ and open the template in the editor.
                         <li><a href="#">JS3</a></li>
                     </ul>
                 </li>
+                <li>
+                    <div class="iocn-link">
+                        <a href="htmls/jsp/jspconcep.html">
+                            <   <i class='bx bxl-javascript'></i>
+                            <span class="link_name">JSP</span>
+                        </a>
+                        <i class='bx bxs-chevron-down arrow' ></i>
+                    </div>
+                    <ul class="sub-menu">
+                        <li><a class="link_name" href="../htmls/jsp/jspconcep.html">JSP</a></li>
 
+                    </ul>
+                </li>  
                 <li>
                     <a href="#">
                         <i class='bx bx-cog' ></i>
@@ -101,13 +113,14 @@ and open the template in the editor.
                     </ul>
                 </li>
 
+
             </ul>
         </div>
         <h1>Tecnología JSP (JavaServer Pages)</h1>
         <section class="home-section">
             <div class="home-content">
                 <i class='bx bx-menu' ></i>
-                <span class="text">Introducción a JavaScript</span>
+                <span class="text">Introducción a JavaServer Pages</span>
                 <span class="arriba bx bxs-up-arrow"></span>
 
                 <article>
@@ -116,11 +129,37 @@ and open the template in the editor.
                     </div>
 
                     <h1>Definición</h1>
-                    <p>La tecnología<strong>JavaServer Pages</strong> permite generar contenido Web dinámico como, por ejemplo, archivos HTML, DHTML, XHTML y XML, para incluirlos en una aplicación Web. Los archivos JSP son una forma de implementar contenido de páginas dinámico del lado del servidor. Los archivos JSP permiten a un servidor Web como, por ejemplo, Apache Tomcat, añadir contenido dinámicamente a las páginas HTML antes de enviarlas al navegador que las solicita.</p>
+                    <p>La tecnología <strong>JavaServer Pages</strong> permite generar contenido Web dinámico como, por ejemplo, archivos HTML, DHTML, XHTML y XML, con el objetivo de incluirlos en una aplicación Web. Por lo cual los archivos JSP son una forma de implementar contenido de páginas dinámico del lado del servidor. Los archivos JSP permiten a un servidor Web como, por ejemplo, Apache Tomcat les permite añadir contenido de una manera dinámica a las páginas HTML antes de enviarlas al navegador que las solicita [1].</p>
                     <hr> 
-                    <p>Cuando se despliega un archivo JSP en un servidor Web que proporciona un motor de servlets, se procesa previamente en un servlet que se ejecuta en el servidor. Esto contrasta con JavaScript™ en el lado del cliente (dentro de códigos, que se ejecuta en un navegador. Una página JSP resulta ideal para tareas para tareas cuya ejecución es más adecuada en el servidor como, por ejemplo, acceder a bases de datos o llamar a beans de Enterprise Java™.</p>
-                    <p>Puede crear y editar un archivo JSP en el editor HTML añadiendo su propio texto e imágenes utilizando HTML, códigos JSP o JavaScript, incluyendo código fuente Java dentro de los códigos de scriptlet. Normalmente, los archivos JSP tienen la extensión de archivo .jsp. Asimismo, la especificación JSP recomienda que los archivos de fragmento JSP tengan la extensión de archivo .jspf. Si no se sigue este convenio, el validador de JSP tratará los fragmentos JSP como archivos JSP autónomos normales y se pueden generar errores de compilación.</p>
-                    <p>Para utilizar bibliotecas de códigos personalizadas de JSP 1.2, puede importar la biblioteca de códigos .tld y los archivos .jar al proyecto para utilizarlos o asociarlos como proyectos de biblioteca Web. También puede hacer referencia a un archivo TDL utilizando un URI.</p>                  
+                    <p>Cuando un archivo JSP se envía a un servidor web que consiste en un motor de servlet, es preprocesado por un servlet que se ejecuta en el servidor. Esto contrasta con JavaScript del lado del cliente (en código), que se ejecuta en el navegador. Las páginas JSP se utilizan para tareas que se realizan mejor en el servidor, como acceder a bases de datos o llamar a beans Enterprise Java [1]. </p>
+                    <p>Puede crear y editar archivos JSP en un editor HTML agregando su propio texto e imágenes usando HTML, etiquetas JSP o JavaScript con código fuente Java en etiquetas de scriptlet. Los archivos JSP suelen tener una extensión de archivo .jsp. La especificación JSP también recomienda dar a los archivos de fragmentos JSP  la extensión de archivo .jspf. Si no  sigue esta convención, el validador  JSP tratará su fragmento JSP como un archivo JSP independiente normal y es posible que obtenga errores de compilación[1].</p>
+                    <p>Para usar una biblioteca de etiquetas JSP 1.2 personalizada, puede importar la biblioteca de etiquetas .tld y los archivo .jar a su proyecto y usarlos o asociarlos como un proyecto de biblioteca web. También puede hacer referencia al archivo TDL usando el URI [1].</p>                  
+                    <div class="cajon-ejemplo">
+                        <pre class="html"><span class="hljs-meta">&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">"&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">html</span> &gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Mi primera página JSP<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>>
+                        <span class="hljs-string">Hoy es:</span>
+                        <%= new java.util.Date() %>;
+                       </span><span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></pre>
+                    </div>
+                    <p>Para ejecutar la página, simplemente colóquela en una aplicación web (como Tomcat). 
+                        aplicación web/RAÍZ). No tiene que estar en un directorio específico como 
+                        Ocurre en servlets, pero se puede mover a cualquier directorio donde se coloque 
+                        normalmente en HTML [2].</p>
+                    <p>La última versión de la especificación JSP es  2.0, que es bastante nueva (Tomcat 4.x implementa la versión anterior,  1.2). Como puede ver, esta es la especificación para la API de Servlet, específicamente la versión 2.3 [2].</p>
+                    <p> JSP es excelente para generar páginas con mucho contenido estático. servlet Debe contener muchas declaraciones del tipo que realizan la misma función. Salida HTML usando out.println() . Por el contrario, los servlets son mejores Páginas con tareas con poca salida, datos binarios o mucho contenido variable[2].</p>
+                    <p>Se recomienda una combinación de ambas tecnologías para proyectos más complejos. Por lo cual nos ayudara para el procesamiento de información y JSP y poder presentar datos al cliente [2].</p>
+                    <span class="text"> Bibliografía</span>
+                    <div class="cajon-ejemplo">
+                        <p><strong>[1]</strong> “Tecnología JSP (JavaServer Pages) - Documentación de IBM.” https://www.ibm.com/docs/es/rsar/9.5?topic=files-javaserver-pages-jsp-technology (accessed Aug. 11, 2022).</p>
+                    <p><strong>[2]</strong> “Introducción a JSP,” JSP Básico, Mar. 2021. http://www.jtech.ua.es/j2ee/2006-2007/doc/sesion08-apuntes.pdf (accessed Aug. 11, 2022).</p>
+                    </div>
                 </article>
             </div>
             <script src="../../js/style_menu.js"></script>
