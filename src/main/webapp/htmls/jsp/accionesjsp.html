@@ -122,45 +122,59 @@ and open the template in the editor.
         <section class="home-section">
             <div class="home-content">
                 <i class='bx bx-menu' ></i>
-                <span class="text">Introducción a JavaServer Pages</span>
+                <span class="text">Acciones de JavaServer Pages</span>
                 <span class="arriba bx bxs-up-arrow"></span>
 
                 <article>
                     <div align="center">
-                        <img  src="https://marcago.com/wp-content/uploads/2022/03/que-es-jsp-926x666-1.jpg" width="410" height="400"  alt="www" />
+                        <img  src="https://sites.google.com/site/javawebec/_/rsrc/1322799602850/home/jsp/jsp.png.1322799602749.png?height=233&width=320" width="410" height="400"  alt="www" />
                     </div>
 
-                    <h1>Definición</h1>
-                    <p>La tecnología <strong>JavaServer Pages</strong> permite generar contenido Web dinámico como, por ejemplo, archivos HTML, DHTML, XHTML y XML, con el objetivo de incluirlos en una aplicación Web. Por lo cual los archivos JSP son una forma de implementar contenido de páginas dinámico del lado del servidor. Los archivos JSP permiten a un servidor Web como, por ejemplo, Apache Tomcat les permite añadir contenido de una manera dinámica a las páginas HTML antes de enviarlas al navegador que las solicita [1].</p>
-                    <hr> 
-                    <p>Cuando un archivo JSP se envía a un servidor web que consiste en un motor de servlet, es preprocesado por un servlet que se ejecuta en el servidor. Esto contrasta con JavaScript del lado del cliente (en código), que se ejecuta en el navegador. Las páginas JSP se utilizan para tareas que se realizan mejor en el servidor, como acceder a bases de datos o llamar a beans Enterprise Java [1]. </p>
-                    <p>Puede crear y editar archivos JSP en un editor HTML agregando su propio texto e imágenes usando HTML, etiquetas JSP o JavaScript con código fuente Java en etiquetas de scriptlet. Los archivos JSP suelen tener una extensión de archivo .jsp. La especificación JSP también recomienda dar a los archivos de fragmentos JSP  la extensión de archivo .jspf. Si no  sigue esta convención, el validador  JSP tratará su fragmento JSP como un archivo JSP independiente normal y es posible que obtenga errores de compilación[1].</p>
-                    <p>Para usar una biblioteca de etiquetas JSP 1.2 personalizada, puede importar la biblioteca de etiquetas .tld y los archivo .jar a su proyecto y usarlos o asociarlos como un proyecto de biblioteca web. También puede hacer referencia al archivo TDL usando el URI [1].</p>                  
-                    <div class="cajon-ejemplo">
-                        <pre class="html"><span class="hljs-meta">&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">"&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">html</span> &gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Mi primera página JSP<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
-                        <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>>
-                        <span class="hljs-string">Hoy es:</span>
-                        <%= new java.util.Date() %>;
-                       </span><span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-                        <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
-                        <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></pre>
-                    </div>
-                    <p>Para ejecutar la página, simplemente colóquela en una aplicación web (como Tomcat). 
-                        aplicación web/RAÍZ). No tiene que estar en un directorio específico como 
-                        Ocurre en servlets, pero se puede mover a cualquier directorio donde se coloque 
-                        normalmente en HTML [2].</p>
-                    <p>La última versión de la especificación JSP es  2.0, que es bastante nueva (Tomcat 4.x implementa la versión anterior,  1.2). Como puede ver, esta es la especificación para la API de Servlet, específicamente la versión 2.3 [2].</p>
-                    <p> JSP es excelente para generar páginas con mucho contenido estático. servlet Debe contener muchas declaraciones del tipo que realizan la misma función. Salida HTML usando out.println() . Por el contrario, los servlets son mejores Páginas con tareas con poca salida, datos binarios o mucho contenido variable[2].</p>
-                    <p>Se recomienda una combinación de ambas tecnologías para proyectos más complejos. Por lo cual nos ayudara para el procesamiento de información y JSP y poder presentar datos al cliente [2].</p>
+                    <h1>Acciones</h1>
+                    <p>En JSP existen varios mecanismos para incluir elementos externos en la página actual o
+                        redirigir la petición hacia otra página</p>
+                    <p><strong>• La directiva include</strong> permite insertar código en la página antes de que ésta se transforme en un servlet por lo cual esto le permitira reutilizar fragmentos de código JSP, HTML.</p>
+                    <p><strong>• La acción &lt;jsp:include&gt;</strong> Puede pegar la salida de otra página JSP. tenga en cuenta que contiene la salida generada por el código JSP, no el código en sí.</p>
+                    <p><strong>• La acción &lt;jsp:plugin&gt;</strong> permite la integración de applets que usan Java 2.</p>
+                    <p><strong>• La acción &lt;jsp:forward&gt;</strong> se utiliza para redirigir la solicitud a otra página JSP.</p>
+                    <h2>La directiva include</h2>   
+                    <p>Es el equivalente al #include del lenguaje C. su sintaxis es:</p>
+                    <p><strong>&lt;%@ include file="fichero" %&gt;</strong></p>
+                    <p> El código se incluye en el servlet generado, por lo que el fragmento de código incluido es habilitado en la página actual. Así que puedes usar esta directiva para definir constantes, generando encabezados HTTP [1].</p>
+                    <p> El problema con esta directiva es que el estándar no requiere un contenedor JSP para el reconocimiento cambia automáticamente en los archivos incluidos, por lo que si cambia uno puede ser necesario forzar una recompilación de las páginas JSP que las contienen [1].</p>                  
+                    <p> La especificación JSP recomienda que si la página incluida no es una página JSP válida por
+                        sí sola (por ejemplo, porque utiliza variables que se confía que se hayan declarado
+                        previamente) se utilice la extensión "estándar".JSPF <strong>(JSP fragment)</strong> y se coloque en un
+                        directorio no público del contenedor JSP (<strong>por ejemplo</strong>, WEB-INF, que no es accesible desde
+                        el cliente, pero sí desde la directiva)[1].</p>
+                    <h2>La acción &lt;jsp:include&gt;</h2>   
+                    <p> Esta acción incluye la salida generada por otra página que pertenece a la misma aplicación web. La solicitud se redirige a la página que la contiene y la respuesta generada es: Incluida en lo  generado por el main. Su sintaxis es: [2].</p>
+                    <p><strong>&lt;jsp:include page="URL relativa" flush="true|false"/&gt;</strong></p>
+                    <p> El atributo de descarga hace que el flujo de salida de la página principal debería ser enviado al cliente antes de enviar la página contenedora. En JSP 1.2, este atributo es opcional y su valor predeterminado es falso. Requerido en JSP 1.1 y siempre debe ser verdadero (Obligar Vaciar el búfer fue problemático porque una vez hecho, no se puede hacer ya los escribieron así que haz una redirección o ve a una página de error encabezamiento)[2].</p>
+                    <p>Esta acción tiene ventajas sobre la directiva del mismo nombre. La página contenedora no fuerza una recompilación de "principal". Sin embargo, sólo la página de grabación tenga acceso al JspWriter "principal" y no puedo generar encabezados (por ejemplo, no puede crear cookies)[2].</p>
+                    <p>Por defecto, la solicitud reenviada a la página contenedora es la solicitud original pero se le pueden agregar parámetros usando la etiqueta jsp:param. <strong>Por ejemplo:</strong></p>
+                    <p><strong>&lt;jsp:include page="cabecera.jsp"&gt;</strong></p>
+                    <p><strong>&lt;jsp:param name="color" value="YELLOW" /&gt;</strong></p>
+                    <p><strong>&lt;/jsp:include&gt;</strong></p>
+                    <h2>La acción &lt;jsp:plugin&gt;</h2>  
+                    <p>Esta acción se utiliza para incluir subprogramas portátiles e independientes del navegador. 
+                        Utilice bibliotecas Java 2 (Swing, Collections, Java 2D, etc.). 
+                        Algunos navegadores  antiguos (Explorer 5.x, 
+                        Netscape 4.x,...) son para versiones anteriores a Java 2 [3].</p>
+                    <h2>La acción &lt;jsp:forward&gt;</h2>   
+                    <p>Esta acción se utiliza para redirigir una solicitud a otra página JSP dentro de la misma página. Una aplicación web diferente a la actual un ejemplo de su sintaxis básica es:</p>
+                    <p><strong>&lt;jsp:forward page="principal.jsp"/&gt;</strong></p>
+                    <p>Cualquier salida generada hasta ahora desde la página actual se descarta (se borra el búfer)en el se produce una excepción si no se utiliza el búfer de salida [3].</p>
+                    <p>Al igual que en el caso de &lt;jsp:include&gt;, se pueden añadir parámetros a la petición original para que los reciba la nueva página JSP:</p>
+                    <p><strong>&lt;jsp:forward page="principal.jsp"&gt;</strong></p>
+                    <p><strong>&lt;jsp:param name="privilegios" value="root" /&gt;</strong></p>
+                    <p><strong>&lt;/jsp:forward&gt;</strong></p>
                     <span class="text"> Bibliografía</span>
                     <div class="cajon-ejemplo">
                         <p><strong>[1]</strong> “Tecnología JSP (JavaServer Pages) - Documentación de IBM.” https://www.ibm.com/docs/es/rsar/9.5?topic=files-javaserver-pages-jsp-technology (accessed Aug. 11, 2022).</p>
-                    <p><strong>[2]</strong> “Introducción a JSP,” JSP Básico, Mar. 2021. http://www.jtech.ua.es/j2ee/2006-2007/doc/sesion08-apuntes.pdf (accessed Aug. 11, 2022).</p>
+                        <p><strong>[2]</strong> “R. Casado-Vara, “Parallel and Distributed Systems-237-J2EE-JSP, Serviets y Strusts,” 2019.</p>
+                        <p><strong>[3]</strong> “Tutorial de JSP (10) : action include. « JTagua.” https://jtagua.wordpress.com/2010/10/02/tutorial-de-jsp-10-action-include/ (accessed Aug. 11, 2022).</p>
+
                     </div>
                 </article>
             </div>
