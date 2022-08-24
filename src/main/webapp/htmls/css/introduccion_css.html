@@ -167,6 +167,95 @@ and open the template in the editor.
                         página, ya que todos tendrán el mismo aspecto establecido mediante CSS. 
                     </p>
                 </section>
+                
+                <section class="contenido">
+                    <h1>Breve historia de CSS</h1>
+                    <br>
+                    <p>
+                        Las hojas de estilos aparecieron poco después que el lenguaje de etiquetas SGML, alrededor del año 1970. Desde la creación de SGML, se observó la necesidad de definir un mecanismo que permitiera aplicar de una forma consistente donde permite utilizar diferentes estilos a los documentos electrónicos.
+                        El gran impulso que tuvo los lenguajes de hojas de estilos se produjo con el boom de Internet y el crecimiento exponencial del lenguaje HTML para la creación de documentos electrónicos.
+                    </p>
+                    <br>
+                    <p>
+                        La guerra de navegadores y la falta de un estándar para la definición de los estilos dificultaban la creación de documentos con la misma apariencia en diferentes navegadores.
+                        Una de las características fundamentales de CSS1 es que las hojas de estilo caen en cascada; los autores pueden adjuntar una hoja de estilo preferida, mientras que el lector puede tener una hoja de estilo personal para ajustar las desventajas humanas o tecnológicas. Las reglas para resolver conflictos entre diferentes hojas de estilo se definen en esta especificación.
+
+                    </p>
+                    <br>
+                    <p>
+                        El organismo W3C (http://www.w3.org/) (World Wide Web Consortium), son los encargados de crear todos los estándares relacionados con la web, propuso la creación de un lenguaje de hojas de estilos específico para el lenguaje HTML y se presentaron nueve propuestas. Las dos propuestas que se tuvieron en cuenta fueron la CHSS (Cascading HTML Style Sheets) y la SSP (Stream-based Style Sheet Proposal).
+                        En 1995, el W3C decidió apostar por el desarrollo y estandarización de CSS y lo añadió a su grupo de trabajo de HTML. A finales de 1996, el W3C publicó la primera recomendación oficial, conocida como "CSS nivel 1".
+                    </p>
+                    <br>
+                    <strong>•	CSS 2:</strong>  Apareció en 1999 y fue completado por CSS 2.1, esta nueva versión de CSS añade numerosas opciones. Ahora se pueden utilizar técnicas de posicionamiento muy precisas que permiten ver los elementos en el lugar deseado en la página.
+                    <br>
+                    <br>
+                    <strong>•	CSS 3:</strong> Esta es la última versión, que agrega características muy esperadas, tales como bordes redondeados, degradados, sombras, etc.
+                </section>
+                
+                <section class="contenido">
+                    <h1>Especificación oficial</h1>
+                    <br>
+                    <p>
+                        La especificación o norma oficial que se utiliza actualmente para diseñar páginas web con CSS es la versión CSS 2.1, fue actualizada por última vez el 19 de julio de 2007 si deseas más información te brindamos este enlace para que consultes libremente en http://www.w3.org/TR/CSS21/.
+                    </p>
+                    <br>
+                    <p>
+                        Desde hace varios años, el organismo W3C trabaja en la elaboración de estándares que ayuden a la próxima versión de CSS, conocida como CSS 3. Esta nueva versión incluye miles de cambios importantes en todos los niveles y es mucho más avanzada y compleja que CSS 2.
+                    </p>
+                    <br>
+                    <p>
+                        No obstante, pasarán muchos años hasta que se publique la versión definitiva completa de CSS 3 y hasta que los principales navegadores del mercado incluyan la mayor parte del nuevo estándar.
+                    </p>
+                    <br>
+                    <p>
+                        El sitio web del organismo W3C dispone de una sección en la que se detalla el trabajo que el W3C está desarrollando actualmente en relación con CSS. 
+                    </p>
+                    <br>
+                    <p>
+                        Por otra parte, el diseño de los sitios web están en constante evolución y es habitual ser modificado cada cierto tiempo los colores principales de las páginas o la tipografía utilizada para el texto. Si se emplea la etiqueta Font, habría que modificar el valor de 1.5 millones de atributos para modificar el diseño general del sitio web.              
+                    </p>
+                    <br>
+                    <p>
+                        Definiendo los estilos de esta forma, no importa el número de elementos que existan en la página, ya que todos tendrán el mismo aspecto establecido mediante CSS. Como se verá a
+                        continuación, esta forma de trabajar con CSS no es ideal, ya que si el sitio web dispone de 10.000
+                        páginas, habría que definir 10.000 veces el mismo estilo CSS.
+                    </p>
+                </section>
+                
+                <section class="contenido">
+                    <h1> Definir CSS en un archivo externo</h1>
+                    <br>
+                    <p>
+                        En este caso, todos los estilos CSS se incluyen en un archivo de tipo CSS que las páginas HTML enlazan mediante la etiqueta. Un archivo de tipo CSS no es más que un archivo simple de texto cuya extensión se representa mediante .css Se pueden crear todos los archivos CSS que sean necesarios y cada página HTML puede enlazar tantos archivos CSS como necesite                    </p>
+                    <br>
+                    <p>
+                        Cuando el navegador carga la página HTML anterior, antes de mostrar sus contenidos permite descargar los archivos CSS externos enlazados mediante la etiqueta enlace y aplica los estilos a los contenidos de la página.                    </p>
+                    <br>
+                    <p>
+                        Normalmente, la etiqueta link incluye cuatro atributos cuando se enlaza un archivo CSS:
+                    </p>
+                    <br>
+                    <p>
+                        <strong>• rel:</strong> Esto permite indicar el tipo de relación que tiene el recurso enlazado (en este caso, el archivo CSS) y
+                        la página HTML. Para los archivos CSS, siempre se utiliza el valor stylesheet
+                    </p>
+                    <br>
+                    <p>
+                        <strong>• type:</strong>Esto permite indicar el tipo de recurso enlazado. Sus valores están estandarizados y para los
+                        archivos CSS su valor siempre es text/css
+                    </p>
+                    <br>
+                    <p>
+                        <strong>• href:</strong> Esto permite indicar la URL del archivo CSS que contiene los estilos. La URL indicada puede ser
+                        relativa o absoluta y puede apuntar a un recurso interno o externo al sitio web.
+                    </p>
+                    <br>
+                    <p>
+                        <strong>• media:</strong> Esto permite indicar el medio en el que se van a aplicar los estilos del archivo CSS. Más adelante
+                        se explican en detalle los medios CSS y su funcionamiento.
+                    </p>
+                </section>
             </div>
             <script src="../../js/style_menu.js"></script>
         </section>

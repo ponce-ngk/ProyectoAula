@@ -118,7 +118,6 @@ and open the template in the editor.
 
             </ul>
         </div>
-        <h1>Tecnología JSP (JavaServer Pages)</h1>
         <section class="home-section">
             <div class="home-content">
                 <i class='bx bx-menu' ></i>
@@ -161,6 +160,84 @@ and open the template in the editor.
                     <div class="cajon-ejemplo">
                         <p><strong>[1]</strong> “Tecnología JSP (JavaServer Pages) - Documentación de IBM.” https://www.ibm.com/docs/es/rsar/9.5?topic=files-javaserver-pages-jsp-technology (accessed Aug. 11, 2022).</p>
                     <p><strong>[2]</strong> “Introducción a JSP,” JSP Básico, Mar. 2021. http://www.jtech.ua.es/j2ee/2006-2007/doc/sesion08-apuntes.pdf (accessed Aug. 11, 2022).</p>
+                    </div>
+                </article>
+                
+                <article>
+                    <div align="center">
+                        <img  src="https://data02.123doks.com/thumbv2/123dok_es/000/532/532522/154.892.128.795.177.415/figura-modelo-arquitectura-aplicaciones-jsp.webp" width="400" height="400"  alt="www" />
+                    </div>
+
+                    <h1>Arquitectura de JSP</h1>
+                    <p><strong>• El propósito de JSP:</strong> es proporcionar una manera más declarativo, más guiado a manera de realizar una  presentación que la lograda con servlet.</p>
+                    <p><strong>• Las páginas JSP:</strong> se utilizan en un proceso que involucra dos fases:</p>
+                                        <div class="cajon-ejemplo">
+
+                    <p>   <strong>1.</strong> Fase de conversión dinámica realizada en servlet crea o modifica una página JSP.</p>
+                    <p>   <strong>2.</strong> Etapa de la respuesta a la solicitud cumplida cuando  se carga la clase del servlet generado contenedor de servlets.</p>
+                                        </div>
+                    <p><strong>• En la segunda fase:</strong> para atender concurrentemente al procesamiento de peticiones,el servidor comienza a procesar la solicitud luz (hilo) para cada cliente ejecute el método <strong>jspService()</strong>.</p>
+                    <p><strong>• El método _jspService():</strong> No se puede anular por otros métodos definidos es por el programador, pero en su lugar puede hacer que personalice la inicialización y la terminación métodos <strong>jspInit() y jspDestroy()</strong>[1].</p>
+                    <div align="center">
+                        <img  src="../../images/arq.png" width="400" height="400"  alt="www" />
+                    </div>
+                    <span class="text"> Bibliografía</span>
+                    <div class="cajon-ejemplo">
+                        <p><strong>[1]</strong> V. J. Sosa S Java Server Pages and C. el Servidor Java de Páginas Java Server, “Java Server Pages (JSP)”.</p>
+                    </div>
+                </article>
+                
+                
+                <article>
+                    <div align="center">
+                        <img  src="https://sites.google.com/site/javawebec/_/rsrc/1322799602850/home/jsp/jsp.png.1322799602749.png?height=233&width=320" width="410" height="400"  alt="www" />
+                    </div>
+
+                    <h1>Acciones</h1>
+                    <p>En JSP existen varios mecanismos para incluir elementos externos en la página actual o
+                        redirigir la petición hacia otra página</p>
+                    <p><strong>• La directiva include</strong> permite insertar código en la página antes de que ésta se transforme en un servlet por lo cual esto le permitira reutilizar fragmentos de código JSP, HTML.</p>
+                    <p><strong>• La acción &lt;jsp:include&gt;</strong> Puede pegar la salida de otra página JSP. tenga en cuenta que contiene la salida generada por el código JSP, no el código en sí.</p>
+                    <p><strong>• La acción &lt;jsp:plugin&gt;</strong> permite la integración de applets que usan Java 2.</p>
+                    <p><strong>• La acción &lt;jsp:forward&gt;</strong> se utiliza para redirigir la solicitud a otra página JSP.</p>
+                    <h2>La directiva include</h2>   
+                    <p>Es el equivalente al #include del lenguaje C. su sintaxis es:</p>
+                    <p><strong>&lt;%@ include file="fichero" %&gt;</strong></p>
+                    <p> El código se incluye en el servlet generado, por lo que el fragmento de código incluido es habilitado en la página actual. Así que puedes usar esta directiva para definir constantes, generando encabezados HTTP [1].</p>
+                    <p> El problema con esta directiva es que el estándar no requiere un contenedor JSP para el reconocimiento cambia automáticamente en los archivos incluidos, por lo que si cambia uno puede ser necesario forzar una recompilación de las páginas JSP que las contienen [1].</p>                  
+                    <p> La especificación JSP recomienda que si la página incluida no es una página JSP válida por
+                        sí sola (por ejemplo, porque utiliza variables que se confía que se hayan declarado
+                        previamente) se utilice la extensión "estándar".JSPF <strong>(JSP fragment)</strong> y se coloque en un
+                        directorio no público del contenedor JSP (<strong>por ejemplo</strong>, WEB-INF, que no es accesible desde
+                        el cliente, pero sí desde la directiva)[1].</p>
+                    <h2>La acción &lt;jsp:include&gt;</h2>   
+                    <p> Esta acción incluye la salida generada por otra página que pertenece a la misma aplicación web. La solicitud se redirige a la página que la contiene y la respuesta generada es: Incluida en lo  generado por el main. Su sintaxis es: [2].</p>
+                    <p><strong>&lt;jsp:include page="URL relativa" flush="true|false"/&gt;</strong></p>
+                    <p> El atributo de descarga hace que el flujo de salida de la página principal debería ser enviado al cliente antes de enviar la página contenedora. En JSP 1.2, este atributo es opcional y su valor predeterminado es falso. Requerido en JSP 1.1 y siempre debe ser verdadero (Obligar Vaciar el búfer fue problemático porque una vez hecho, no se puede hacer ya los escribieron así que haz una redirección o ve a una página de error encabezamiento)[2].</p>
+                    <p>Esta acción tiene ventajas sobre la directiva del mismo nombre. La página contenedora no fuerza una recompilación de "principal". Sin embargo, sólo la página de grabación tenga acceso al JspWriter "principal" y no puedo generar encabezados (por ejemplo, no puede crear cookies)[2].</p>
+                    <p>Por defecto, la solicitud reenviada a la página contenedora es la solicitud original pero se le pueden agregar parámetros usando la etiqueta jsp:param. <strong>Por ejemplo:</strong></p>
+                    <p><strong>&lt;jsp:include page="cabecera.jsp"&gt;</strong></p>
+                    <p><strong>&lt;jsp:param name="color" value="YELLOW" /&gt;</strong></p>
+                    <p><strong>&lt;/jsp:include&gt;</strong></p>
+                    <h2>La acción &lt;jsp:plugin&gt;</h2>  
+                    <p>Esta acción se utiliza para incluir subprogramas portátiles e independientes del navegador. 
+                        Utilice bibliotecas Java 2 (Swing, Collections, Java 2D, etc.). 
+                        Algunos navegadores  antiguos (Explorer 5.x, 
+                        Netscape 4.x,...) son para versiones anteriores a Java 2 [3].</p>
+                    <h2>La acción &lt;jsp:forward&gt;</h2>   
+                    <p>Esta acción se utiliza para redirigir una solicitud a otra página JSP dentro de la misma página. Una aplicación web diferente a la actual un ejemplo de su sintaxis básica es:</p>
+                    <p><strong>&lt;jsp:forward page="principal.jsp"/&gt;</strong></p>
+                    <p>Cualquier salida generada hasta ahora desde la página actual se descarta (se borra el búfer)en el se produce una excepción si no se utiliza el búfer de salida [3].</p>
+                    <p>Al igual que en el caso de &lt;jsp:include&gt;, se pueden añadir parámetros a la petición original para que los reciba la nueva página JSP:</p>
+                    <p><strong>&lt;jsp:forward page="principal.jsp"&gt;</strong></p>
+                    <p><strong>&lt;jsp:param name="privilegios" value="root" /&gt;</strong></p>
+                    <p><strong>&lt;/jsp:forward&gt;</strong></p>
+                    <span class="text"> Bibliografía</span>
+                    <div class="cajon-ejemplo">
+                        <p><strong>[1]</strong> “Tecnología JSP (JavaServer Pages) - Documentación de IBM.” https://www.ibm.com/docs/es/rsar/9.5?topic=files-javaserver-pages-jsp-technology (accessed Aug. 11, 2022).</p>
+                        <p><strong>[2]</strong> “R. Casado-Vara, “Parallel and Distributed Systems-237-J2EE-JSP, Serviets y Strusts,” 2019.</p>
+                        <p><strong>[3]</strong> “Tutorial de JSP (10) : action include. « JTagua.” https://jtagua.wordpress.com/2010/10/02/tutorial-de-jsp-10-action-include/ (accessed Aug. 11, 2022).</p>
+
                     </div>
                 </article>
             </div>
