@@ -10,6 +10,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
         <title> APP WEB | PHP </title>
         <link rel="shortcut icon" type="image/png" href="../../images/clases.png">
         <link rel="stylesheet" href="../../css/style_menu.css">
+        <link rel="stylesheet" href="../../css/style_code.css">
   
         <!-- Boxiocns CDN Link -->
         <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
@@ -169,21 +170,47 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
         <section class="home-section">
             <div class="home-content">
                 <i class='bx bx-menu' ></i>
-                <span class="text">Introduccion a las Web Services </span>
+                <span class="text">PHP</span>
                 <span class="arriba bx bxs-up-arrow"></span>
 
                 <article>
                     <div align="center">
-                        <img  src="images/logo_home.png" width="375" height="230"  alt="www" />
+                        <img  src="../../images/php_logo.png" width="375" height="230"  alt="www" />
                     </div>
+                    
 
-                    <h2>Arquitecturas y protocolos de las aplicaciones web</h2>
-                    <p><strong>La arquitectura de las aplicaciones Web</strong> es  proporcionada  por  un  servidor  Web  y  utilizada  por  usuarios  que  se Conectan desde cualquier punto vía clientes Web (browsers o navegadores). La arquitectura de un Sitio Web tiene tres componentes principales: un servidor web, una conexión de red, uno o más clientes. El servidor Web distribuye páginas de información formateada a los clientes que las solicitan. Los requerimientos son hechos a través de una conexión de red, y para ello se usa el protocolo HTTP. Una vez que se solicita esta petición mediante el protocolo HTTP y la recibe el servidor Web, éste localiza la página Web en su sistema de archivos y la envía de vuelta al navegador que la solicitó.</p>
-                    <div align="center">
-                        <img  src="https://programacionwebisc.files.wordpress.com/2013/11/3cap.png" width="375" height="230"  alt="www" />
+                    <h2>¿Que es PHP?</h2>
+                    <p> <strong>PHP (acrónimo recursivo de PHP: preprocesador de hipertexto)</strong>  es un lenguaje de código abierto muy extendido, especialmente adecuado para el desarrollo web que se puede incrustar en HTML. En lugar de usar muchos comandos para mostrar HTML (como en C o Perl), las páginas PHP contienen HTML con código que hace "algo" (en este caso dice "¡Hola, soy un script PHP!). ¿El código PHP está encerrado en etiquetas especiales de inicio y fin <?php y?> que le permiten insertar y salir de "PHP modo"[1].</p>
+                    <hr><h3>Ejemplo</h3>
+                    <div class="caja-ejemplo">
+                        <pre  class="example">
+                            <code class="language-markup">
+                                &ltDOCTYPE html&gt
+                                &lthtml lang=”es”&gt
+                                &lthead&gt
+                                    <b>&lttitle>Título del documento &lt/title&gt</b>
+                                &lthead&gt
+                                &ltbody&gt
+                                    <b>&lt ?php</b>
+                                        <b>echo "¡Hola, soy un script de PHP!";</b>
+                                    <b>?&gt</b>
+                                &ltbody&gt
+                                &lt/html&gt
+                            </code>
+                        </pre>
                     </div>
+                    <hr>
+                    <p>Lo que distingue a PHP de algo del lado del cliente como JavaScript es que el código se ejecuta en el servidor, genera HTML y lo envía al cliente. El cliente recibirá el resultado de ejecutar el script, aunque no sabe cuál era el código subyacente. El servidor web también se puede configurar para procesar todos los archivos HTML con PHP, por lo que no hay forma de que los usuarios sepan lo que tienen bajo la manga[2].</p>
+                    <p>Lo mejor de usar PHP es su extrema simplicidad para principiantes, pero al mismo tiempo ofrece muchas funciones avanzadas para programadores profesionales. No tenga miedo de leer la larga lista de características de PHP. En unas horas puedes empezar a escribir tus primeros guiones[1].</p>
+                    <hr>
                 </article>
+                <h2>Bibliografia</h2>
+                <blockquote>[1]	M. R. Valarezo Pardo, J. A. Honores Tapia, A. S. Gómez Moreno, and L. F. Vinces Sánchez, “Comparación de tendencias tecnológicas en aplicaciones web,” 3c Tecnología: glosas de innovación aplicadas a la pyme, ISSN-e 2254-4143, Vol. 7, No. 3, 2018, págs. 28-49, vol. 7, no. 3, pp. 28–49, 2018, doi: 10.17993/3ctecno.2018.v7n3e27.28-49/30.</blockquote>
+                <blockquote>[2]	R. E. Roman Arenaza, “LENGUAJES DE PROGRAMACIÓN JAVASCRIPT,” 2019.</blockquote>
+                <blockquote>[3]	F. Tejera-Martínez, D. Aguilera, J. M. Vílchez-González, F. Tejera-Martínez, D. Aguilera, and J. M. Vílchez-González, “Lenguajes de programación y desarrollo de competencias clave. Revisión sistemática,” Revista electrónica de investigación educativa, vol. 22, pp. 1–12, Feb. 2020, doi: 10.24320/REDIE.2020.22.E27.2869.</blockquote>
+                <blockquote>[4]	IONOS, “Los lenguajes de programación para la Web más utilizados - IONOS,” Jan. 24, 2020. https://www.ionos.mx/digitalguide/paginas-web/desarrollo-web/lenguajes-de-programacion-web/ </blockquote>
             </div>
             <script src="../../js/style_menu.js"></script>
+            <script src="../../js/style_code.js"></script>
         </section>
 </html>

@@ -357,8 +357,8 @@ blockquote{
 
 .cajon-ejemplo{
     background: white;
-    width: 70%;
-    max-width: 800px;
+    width: 200%;
+    max-width: 1000px;
     margin: 10px auto;
     box-shadow: 0 0 10px rgba(0,0,0,.1);
     text-align: left;
