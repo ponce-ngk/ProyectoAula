@@ -350,6 +350,10 @@ img {
 div{
     align-content: center;
 }
+blockquote{
+         margin: 0 0 0.5em 0;
+        font-style: italic;
+}
 
 .cajon-ejemplo{
     background: white;
@@ -362,3 +366,22 @@ div{
 
 .hljs-tag .hljs-name{color:#63a35c}.hljs-tag .hljs-attr{color:#795da3}
 
+.table-wrap
+{
+    background: rgb(232, 242, 245);
+    width: 70%;
+    max-width: 800px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    text-align: left;
+    webkit-tap-highlight-color: transparent;
+    color: #3c3c3c;
+    -webkit-text: 100%;
+    size-adjust: 100%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    font-family: "OpenSansRegular",Arial,Helvetica,sans-serif !important;
+    box-sizing: border-box;
+
+}
