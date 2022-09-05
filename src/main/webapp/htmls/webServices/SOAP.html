@@ -169,20 +169,60 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
         <section class="home-section">
             <div class="home-content">
                 <i class='bx bx-menu' ></i>
-                <span class="text">Introduccion a las Web Services </span>
+                <span class="text">SOAP</span>
                 <span class="arriba bx bxs-up-arrow"></span>
 
                 <article>
                     <div align="center">
-                        <img  src="images/logo_home.png" width="375" height="230"  alt="www" />
+                        <img  src="../../images/SOAP.png" width="375" height="230"  alt="www" />
                     </div>
-
-                    <h2>Arquitecturas y protocolos de las aplicaciones web</h2>
-                    <p><strong>La arquitectura de las aplicaciones Web</strong> es  proporcionada  por  un  servidor  Web  y  utilizada  por  usuarios  que  se Conectan desde cualquier punto vía clientes Web (browsers o navegadores). La arquitectura de un Sitio Web tiene tres componentes principales: un servidor web, una conexión de red, uno o más clientes. El servidor Web distribuye páginas de información formateada a los clientes que las solicitan. Los requerimientos son hechos a través de una conexión de red, y para ello se usa el protocolo HTTP. Una vez que se solicita esta petición mediante el protocolo HTTP y la recibe el servidor Web, éste localiza la página Web en su sistema de archivos y la envía de vuelta al navegador que la solicitó.</p>
+                    <p>SOAP (Simple Object Access Protocol) es un protocolo basado en el lenguaje de comunicación estándar XML que nos permite enviar y recibir mensajes de servicios web entre diferentes sistemas o aplicaciones. Por tanto, podemos decir que SOAP define cómo tiene lugar la comunicación y utiliza el protocolo HTTP para ello. HTTP, o Protocolo de transferencia de hipertexto, se refiere al protocolo que nos permite realizar una solicitud de datos y recursos. Es uno de los más utilizados en Internet por buscadores como Google y servidores[1]..</p>
+                    <p>La comunicación en Internet se basa principalmente en protocolos como HTTP, HTTPS, FTP o, en otro nivel, TCP. Pero SOAP es esencial para los servicios web, las interfaces a través de las cuales un dispositivo puede utilizar el servicio de un servidor. Los motores de búsqueda, las tiendas online y muchos otros servicios en Internet pasan por estos servicios web, y SOAP es uno de los protocolos que lo hacen posible[2].</p>
+                    <p>SOAP se ha utilizado desde la década de 1990 para permitir la comunicación entre un cliente, como un navegador de Internet, y los servicios en un servidor. Para que esto sea posible, el cliente debe enviar una solicitud a la API. El marco SOAP determina la forma que debe tomar dicha solicitud. Los datos específicos de la aplicación también se pueden incluir en esta definición de solicitud, lo cual es una fortaleza de SOAP. De esta forma, los servicios web pueden desplegar diferentes aplicaciones. Para que puedan ser utilizados como servicios web sin tener que tener la misma sintaxis, SOAP establece unas reglas básicas[2].</p>
+                    
+                    <hr></hr>
+                    <h2>La estructura de SOAP: funcionamiento del protocolo</h2>
+                    <p>En la mayoría de los casos, SOAP también está integrado con HTTP. El transporte se realiza a través del protocolo y está integrado en su estructura. Un mensaje HTTP con una solicitud SOAP tiene el siguiente formato:En este ejemplo, la solicitud comienza con un encabezado HTTP. Luego viene el llamado sobre SOAP, que encierra el contenido real del mensaje como un sobre. Los elementos principales de SOAP son el encabezado y el cuerpo[2].</p>
                     <div align="center">
-                        <img  src="https://programacionwebisc.files.wordpress.com/2013/11/3cap.png" width="375" height="230"  alt="www" />
+                        <img  src="../../images/ejemplo_soap1.png" width="775" height="630"  alt="www" />
                     </div>
+                    <p><strong>Encabezado:</strong> el encabezado de la solicitud SOAP contiene metadatos como el cifrado utilizado. Su uso es opcional.</p>
+                    <p><strong>Cuerpo:</strong> Los datos en sí están en el cuerpo del mensaje.</p>
+                    <p>Los conceptos utilizados en el cuerpo no tienen nada que ver con SOAP, sino que dependen completamente de la aplicación.</p>
+                    <hr></hr>
+
+                    <h2>Elementos del SOAP</h2>
+                    <p>El elemento de sobre SOAP se utiliza para indicar el principio y el final de un mensaje SOAP. Esto permite que la aplicación cliente que llama al servicio web sepa cuándo se ha completado el mensaje SOAP.Los siguientes puntos se pueden observar en el elemento de sobre SOAP[3].</p>
+                    <p>•	Cada mensaje SOAP debe tener un elemento de sobre raíz. Es absolutamente obligatorio que el mensaje SOAP tenga un elemento de sobre[3].</p>
+                    <p>•	Cada elemento de cubierta debe tener al menos un elemento de cuerpo de jabón [3]..</p>
+                    <p>•	Si un elemento Envelope contiene un elemento de encabezado, debe contener como máximo uno y debe aparecer como el primer hijo del sobre, antes del elemento del cuerpo [3].</p>
+                    <p>•	El sobre cambia cuando cambian las versiones de SOAP [3].</p>
+                    <p>•	Un procesador SOAP compatible con v1.1 falla cuando recibe un mensaje que contiene el espacio de nombres del sobre v1.2 [3].</p>
+                    <p>•	Un procesador SOAP compatible con v1.2 genera un error de discrepancia de versión si recibe un mensaje que no incluye el espacio de nombres del sobre v1.2 [3].</p>
+                    
+                    <div class="cajon-ejemplo">
+                    <pre>&lt;?xml version="1.0"?&gt;
+                        &lt;SOAP-ENV:Envelope xmlns:SOAP-ENV="http://www.w3.org/2001/12/soap-envelope" &gt;
+                            &lt;SOAP-ENV:encodingStyle=" http://www.w3.org/2001/12/soap-encoding"&gt;
+                                  &lt;soap:Body&gt;
+                                &lt;Guru99WebService xmlns="http://tempuri.org/"&gt;
+                                          &lt;TutorialID&gt;int&lt;/TutorialID&gt;
+                                        &lt;/Guru99WebService&gt;
+                                  &lt;/soap:Body&gt;
+                        &lt;/SOAP-ENV:Envelope&gt;
+                        </pre>
+                    </div>
+                    <hr></hr>
+                    <h2>Ventajas del SOAP</h2>
+                    <p>SOAP es el protocolo utilizado para intercambiar datos entre aplicaciones. Estas son algunas de las razones por las que se usa SOAP.Al desarrollar servicios web basados en SOAP, debe tener un lenguaje que los servicios web puedan usar para comunicarse con las aplicaciones cliente. SOAP es el medio perfecto que se ha desarrollado para lograr este objetivo. Este protocolo también es recomendado por el Consorcio W3C, que es el órgano rector de todos los estándares web[3].</p>
+                    <p>SOAP es un protocolo ligero que se utiliza para intercambiar datos entre aplicaciones. Tenga en cuenta la palabra clave 'luz'. Como la programación SOAP se basa en XML, que es un lenguaje ligero de intercambio de datos, SOAP es un protocolo que también cae en la misma categoría[3].</p>
+                    <p>SOAP está diseñado para ser independiente de la plataforma y también está diseñado para ser independiente del sistema operativo. Por lo tanto, el protocolo SOAP puede funcionar con cualquier aplicación basada en lenguaje de programación en plataformas Windows y Linux[3].</p>
+                    <hr></hr>
                 </article>
+                <h2>Bibliografia</h2>
+                <blockquote>[1]	ATVISE, “Tipos de Web Service la Industria 4.0 - SOAP & RESTful | atvise®,” Feb. 02, 2021. https://atvise.vesterbusiness.com/news/tipos-web-service-en-la-industria/ </blockquote>
+                <blockquote>[2]	IONOS, “SOAP | Web services y recomendación de W3C - IONOS,” Apr. 15, 2020. https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/soap-simple-object-access-protocol/ </blockquote>
+                <blockquote>[3]	A. Walker, “Tutorial de servicios web SOAP: ¿Qué es el protocolo SOAP? EJEMPLO,” Jun. 22, 2022. https://www.guru99.com/soap-simple-object-access-protocol.html </blockquote>
             </div>
             <script src="../../js/style_menu.js"></script>
         </section>

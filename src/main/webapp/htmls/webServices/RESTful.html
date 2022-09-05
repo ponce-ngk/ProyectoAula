@@ -10,6 +10,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
         <title> APP WEB | Restful  </title>
         <link rel="shortcut icon" type="image/png" href="../../images/clases.png">
         <link rel="stylesheet" href="../../css/style_menu.css">
+        <link rel="stylesheet" href="../../css/style_code.css">
   
         <!-- Boxiocns CDN Link -->
         <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
@@ -169,20 +170,91 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
         <section class="home-section">
             <div class="home-content">
                 <i class='bx bx-menu' ></i>
-                <span class="text">Introduccion a las Web Services </span>
+                <span class="text">RESTFUL</span>
                 <span class="arriba bx bxs-up-arrow"></span>
 
                 <article>
                     <div align="center">
-                        <img  src="images/logo_home.png" width="375" height="230"  alt="www" />
+                        <img  src="../../images/rest.png" width="375" height="230"  alt="www" />
                     </div>
-
-                    <h2>Arquitecturas y protocolos de las aplicaciones web</h2>
-                    <p><strong>La arquitectura de las aplicaciones Web</strong> es  proporcionada  por  un  servidor  Web  y  utilizada  por  usuarios  que  se Conectan desde cualquier punto vía clientes Web (browsers o navegadores). La arquitectura de un Sitio Web tiene tres componentes principales: un servidor web, una conexión de red, uno o más clientes. El servidor Web distribuye páginas de información formateada a los clientes que las solicitan. Los requerimientos son hechos a través de una conexión de red, y para ello se usa el protocolo HTTP. Una vez que se solicita esta petición mediante el protocolo HTTP y la recibe el servidor Web, éste localiza la página Web en su sistema de archivos y la envía de vuelta al navegador que la solicitó.</p>
+                    <h2>¿Que es una API?</h2>
+                    <p>Una interfaz de programa de aplicación (API) define las reglas que se deben seguir para comunicarse con otros sistemas de software. Los desarrolladores exponen o crean API para que otras aplicaciones puedan comunicarse con sus aplicaciones mediante programación. Por ejemplo, la aplicación Timesheet expone una API que requiere el nombre completo y el intervalo de fechas de un empleado. Después de recibir esta información, procesa internamente la hoja de horas del empleado y devuelve la cantidad de horas trabajadas en ese rango de fechas. Se puede pensar en una API web como una puerta de enlace entre los clientes y los recursos en la web[1].</p>
+                    <p>Una API es un conjunto de funcionalidades o recursos que nos expone un sistema para poder interactuar con él desde otro sistema, independientemente de los lenguajes de programación en los que esté escrito cada uno de ellos o de la tecnología u otra, y que gracias a ella trabaja con un nivel de abstracción[2].</p>
+                    <P> Podemos ver un ejemplo para entender mejor el concepto, la API de un banco, que nos expondrá sus servicios, digamos para hacer una compra online, así de esta forma desde nuestra aplicación, por ejemplo, una App Android puede llenar un rol en nuestra cuenta bancaria usando la API que nos proporciona el propio banco, sin darnos el código ni los detalles técnicos de cómo hacerlo, porque no nos importa[2].</P>
+                    <hr></hr>
+                    <h2>¿Qué es la API REST?</h2>
+                    <p>Una API RESTful es un estilo arquitectónico para una interfaz de programa de aplicación (API) que usa solicitudes HTTP para acceder y usar datos. Estos datos se pueden usar para los tipos de datos GET, PUT, POST y DELETE, que se refieren a operaciones de lectura, actualización, creación y eliminación relacionadas con los recursos[3].</p>
+                    <p>Su acrónimo deriva de Representational State Transfer, es un estilo de arquitectura de software para la comunicación cliente-servidor. Se basa en el protocolo HTTP para comunicarse con el servidor, y los mensajes enviados y recibidos pueden estar en formato XML o JSON, de los que hablaremos más adelante[2].</p>
+                    <p>La tecnología REST generalmente se prefiere a otras tecnologías similares. Esto suele ocurrir porque REST utiliza menos ancho de banda, lo que lo hace más adecuado para un uso eficiente de Internet. Las API RESTful también se pueden crear con lenguajes de programación como JavaScript o Python[3].</p>
+                    <pre  class="example">
+                        <code class="language-markup">
+                            &#091;
+                            {
+                              &quot;postId&quot;: 1,
+                              &quot;id&quot;: 1,
+                              &quot;name&quot;: &quot;Json is cool&quot;,
+                              &quot;email&quot;: &quot;Eliseo@gardner.biz&quot;,
+                              &quot;body&quot;: &quot;laudantium enim quasi est quidem magnam voluptate ipsam eos&quot;
+                            },
+                            {
+                              &quot;postId&quot;: 1,
+                              &quot;id&quot;: 2,
+                              &quot;name&quot;: &quot;Bravedeveloper is cool too&quot;,
+                              &quot;email&quot;: &quot;Jayne_Kuhic@sydney.com&quot;,
+                              &quot;body&quot;: &quot;est natus enim nihil est dolore omn&quot;
+                            }
+                          ]
+                        </code>
+                    </pre>
+                    <hr></hr>
+                    <h2>¿Cómo funciona una API RESTFULL?</h2>
+                    <p>REST determina la estructura de una API. Los desarrolladores están sujetos a un conjunto específico de reglas cuando diseñan una API. Por ejemplo, una ley establece que un enlace a una URL debe devolver cierta información. Cada URL se denomina solicitud, mientras que los datos devueltos se denominan respuesta[4].</p>
+                    <P>La API REST desglosa una transacción para generar una secuencia de pequeños componentes. Cada componente se ocupa de un aspecto fundamental específico de una transacción. Este modularidad lo convierte en un enfoque de desarrollo flexible. Una API REST aprovecha los métodos HTTP descritos por el protocolo RFC 2616[4]. </P>   
+                    <p>Utiliza las siguientes solicitudes HTTP: solicitudes de búsqueda de datos, solicitudes PUT para cambiar el estado de los datos (como un objeto, archivo o bloque), solicitud POST para crear datos, eliminar la solicitud para eliminarla</p>
+                    <hr></hr>
+                    <h2>¿Cuáles son los beneficios de las API RESTful?</h2>
+                    <p><strong>Escalabilidad:</strong> Los sistemas que implementan API REST pueden escalar de manera eficiente porque REST optimiza las interacciones cliente-servidor. La tecnología sin estado elimina la carga del servidor porque el servidor no necesita retener información de solicitudes de clientes anteriores. El almacenamiento en caché bien administrado elimina parcial o completamente algunas interacciones cliente-servidor. Todas estas funciones admiten la escalabilidad sin causar cuellos de botella en la comunicación que reduzcan el rendimiento[1].</p>        
+                    <p><strong>Flexibilidad:</strong> Los servicios web RESTful admiten la separación completa entre el cliente y el servidor. Simplifican y desacoplan los diversos componentes del servidor para que cada parte pueda evolucionar de forma independiente. Los cambios de plataforma o tecnología realizados en la aplicación del servidor no afectan a la aplicación del cliente. La capacidad de superponer la funcionalidad de la aplicación aumenta aún más la flexibilidad. Por ejemplo, los desarrolladores pueden realizar cambios en la capa de la base de datos sin tener que volver a escribir la lógica de la aplicación[1].</p>
+                    <p><strong>Independencia:</strong> Las API REST son independientes de la tecnología. Puede escribir aplicaciones del lado del cliente y del lado del servidor en múltiples lenguajes de programación sin afectar el diseño de la API. También puede cambiar la tecnología subyacente en ambos lados sin afectar la comunicación[1].</p>
+                    <hr></hr>
+                    <h2>Tabla de las operaciones que integra RESTful</h2>
                     <div align="center">
-                        <img  src="https://programacionwebisc.files.wordpress.com/2013/11/3cap.png" width="375" height="230"  alt="www" />
+                        <img  src="../../images/tablla_restful.png" width="675" height="530"  alt="www" />
                     </div>
+                    <hr></hr>
+                    <h2>DELETE</h2>
+                    <div align="center">
+                        <img  src="../../images/WBS_DELETE.png" width="675" height="530"  alt="www" />
+                    </div>
+                    <hr></hr>
+                    <h2>GET</h2>
+                    <div align="center">
+                        <img  src="../../images/WBS_GET.png" width="675" height="530"  alt="www" />
+                    </div>
+                    <hr></hr>
+                    <h2>PATCH</h2>
+                    <div align="center">
+                        <img  src="../../images/WBS_PATH.png" width="675" height="530"  alt="www" />
+                    </div>
+                    <hr></hr>
+                    <h2>POST</h2>
+                    <div align="center">
+                        <img  src="../../images/WBS_POST.png" width="675" height="530"  alt="www" />
+                    </div>
+                    <hr></hr>
+                    <h2>PUT</h2>
+                    <div align="center">
+                        <img  src="../../images/WBS_PUT.png" width="675" height="530"  alt="www" />
+                    </div>
+                    <hr></hr>
+                    
+
                 </article>
+                <h2>Bibliografia</h2>
+                <blockquote>[1]	AMAZON, “¿Qué es API RESTful? | Guía sobre API RESTful para principiantes | AWS,” May 07, 2022. https://aws.amazon.com/es/what-is/restful-api/ </blockquote>
+                <blockquote>[2]	G. A. Martinez, “Qué es REST, RESTFul, API RESTFul y JSON,” Sep. 01, 2021. https://bravedeveloper.com/2021/09/01/que-es-rest-restful-api-restful-y-json/ </blockquote>
+                <blockquote>[3]	A. S. Gillis, “¿Qué es la API REST (API RESTful)?,” Sep. 2020. https://www.techtarget.com/searchapparchitecture/definition/RESTful-API </blockquote>
+                <blockquote>[4]	Astera, “Definición de API REST: ¿Qué son las API REST (API RESTful)?,” Jan. 28, 2020. https://www.astera.com/es/type/blog/rest-api-definition/#What-are-RESTful-APIs-Used-For? </blockquote>
             </div>
             <script src="../../js/style_menu.js"></script>
         </section>
