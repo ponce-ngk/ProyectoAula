@@ -5,7 +5,7 @@
         <title> APP WEB | JavaServer Pagess </title>
         <link rel="shortcut icon" type="image/png" href="../../images/clases.png">
         <link rel="stylesheet" href="../../css/style_menu.css">
-  
+
         <!-- Boxiocns CDN Link -->
         <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     </head>
-    
+
     <!-- BOTONERA DE INICIO -->
     <body>
         <div class="sidebar close">
@@ -154,13 +154,14 @@
                         <li><a class="link_name" href="../../htmls/framework/introduccionFramework.html">Framework de desarrollo</a></li>
                         <li><a href="../../htmls/framework/Node-JS.html">Node.JS</a></li>
                         <li><a href="../../htmls/framework/Angular.html">Angular</a></li>
+                        <li><a href="../../htmls/framework/Laravel.html">Laravel</a></li>
                         <li><a href="../../htmls/framework/Express.html">Express</a></li>
                         <li><a href="../../htmls/framework/Symfony-PHP.html">Symfony de PHP</a></li>
                     </ul>
                 </li>
             </ul>
         </div>
-        
+
         <section class="home-section">
             <div class="home-content">
                 <i class='bx bx-menu' ></i>
@@ -173,11 +174,11 @@
                     </div>
 
                     <h1>Definición</h1>
-                    <p>La tecnología <strong>JavaServer Pages</strong> permite generar contenido Web dinámico como, por ejemplo, archivos HTML, DHTML, XHTML y XML, con el objetivo de incluirlos en una aplicación Web. Por lo cual los archivos JSP son una forma de implementar contenido de páginas dinámico del lado del servidor. Los archivos JSP permiten a un servidor Web como, por ejemplo, Apache Tomcat les permite añadir contenido de una manera dinámica a las páginas HTML antes de enviarlas al navegador que las solicita [1].</p>
+                    <p>La tecnología <strong>JavaServer Pages</strong> permite generar contenido Web dinámico como, por ejemplo, archivos HTML, DHTML, XHTML y XML, con el objetivo de incluirlos en una aplicación Web. Por lo cual los archivos JSP son una forma de implementar contenido de páginas dinámico del lado del servidor. Los archivos JSP permiten a un servidor Web como, por ejemplo, Apache Tomcat les permite añadir contenido de una manera dinámica a las páginas HTML antes de enviarlas al navegador que las solicita [4].</p>
                     <hr> 
-                    <p>Cuando un archivo JSP se envía a un servidor web que consiste en un motor de servlet, es preprocesado por un servlet que se ejecuta en el servidor. Esto contrasta con JavaScript del lado del cliente (en código), que se ejecuta en el navegador. Las páginas JSP se utilizan para tareas que se realizan mejor en el servidor, como acceder a bases de datos o llamar a beans Enterprise Java [1]. </p>
-                    <p>Puede crear y editar archivos JSP en un editor HTML agregando su propio texto e imágenes usando HTML, etiquetas JSP o JavaScript con código fuente Java en etiquetas de scriptlet. Los archivos JSP suelen tener una extensión de archivo .jsp. La especificación JSP también recomienda dar a los archivos de fragmentos JSP  la extensión de archivo .jspf. Si no  sigue esta convención, el validador  JSP tratará su fragmento JSP como un archivo JSP independiente normal y es posible que obtenga errores de compilación[1].</p>
-                    <p>Para usar una biblioteca de etiquetas JSP 1.2 personalizada, puede importar la biblioteca de etiquetas .tld y los archivo .jar a su proyecto y usarlos o asociarlos como un proyecto de biblioteca web. También puede hacer referencia al archivo TDL usando el URI [1].</p>                  
+                    <p>Cuando un archivo JSP se envía a un servidor web que consiste en un motor de servlet, es preprocesado por un servlet que se ejecuta en el servidor. Esto contrasta con JavaScript del lado del cliente (en código), que se ejecuta en el navegador. Las páginas JSP se utilizan para tareas que se realizan mejor en el servidor, como acceder a bases de datos o llamar a beans Enterprise Java [4]. </p>
+                    <p>Puede crear y editar archivos JSP en un editor HTML agregando su propio texto e imágenes usando HTML, etiquetas JSP o JavaScript con código fuente Java en etiquetas de scriptlet. Los archivos JSP suelen tener una extensión de archivo .jsp. La especificación JSP también recomienda dar a los archivos de fragmentos JSP  la extensión de archivo .jspf. Si no  sigue esta convención, el validador  JSP tratará su fragmento JSP como un archivo JSP independiente normal y es posible que obtenga errores de compilación[4].</p>
+                    <p>Para usar una biblioteca de etiquetas JSP 1.2 personalizada, puede importar la biblioteca de etiquetas .tld y los archivo .jar a su proyecto y usarlos o asociarlos como un proyecto de biblioteca web. También puede hacer referencia al archivo TDL usando el URI [4].</p>                  
                     <div class="cajon-ejemplo">
                         <pre class="html"><span class="hljs-meta">&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">"&gt;</span>
                         <span class="hljs-tag">&lt;<span class="hljs-name">html</span> &gt;</span>
@@ -195,17 +196,15 @@
                     <p>Para ejecutar la página, simplemente colóquela en una aplicación web (como Tomcat). 
                         aplicación web/RAÍZ). No tiene que estar en un directorio específico como 
                         Ocurre en servlets, pero se puede mover a cualquier directorio donde se coloque 
-                        normalmente en HTML [2].</p>
-                    <p>La última versión de la especificación JSP es  2.0, que es bastante nueva (Tomcat 4.x implementa la versión anterior,  1.2). Como puede ver, esta es la especificación para la API de Servlet, específicamente la versión 2.3 [2].</p>
-                    <p> JSP es excelente para generar páginas con mucho contenido estático. servlet Debe contener muchas declaraciones del tipo que realizan la misma función. Salida HTML usando out.println() . Por el contrario, los servlets son mejores Páginas con tareas con poca salida, datos binarios o mucho contenido variable[2].</p>
-                    <p>Se recomienda una combinación de ambas tecnologías para proyectos más complejos. Por lo cual nos ayudara para el procesamiento de información y JSP y poder presentar datos al cliente [2].</p>
-                    <span class="text"> Bibliografía</span>
-                    <div class="cajon-ejemplo">
-                        <p><strong>[1]</strong> “Tecnología JSP (JavaServer Pages) - Documentación de IBM.” https://www.ibm.com/docs/es/rsar/9.5?topic=files-javaserver-pages-jsp-technology (accessed Aug. 11, 2022).</p>
-                    <p><strong>[2]</strong> “Introducción a JSP,” JSP Básico, Mar. 2021. http://www.jtech.ua.es/j2ee/2006-2007/doc/sesion08-apuntes.pdf (accessed Aug. 11, 2022).</p>
-                    </div>
+                        normalmente en HTML [5].</p>
+                    <p>La última versión de la especificación JSP es  2.0, que es bastante nueva (Tomcat 4.x implementa la versión anterior,  1.2). Como puede ver, esta es la especificación para la API de Servlet, específicamente la versión 2.3 [5].</p>
+                    <p> JSP es excelente para generar páginas con mucho contenido estático. servlet Debe contener muchas declaraciones del tipo que realizan la misma función. Salida HTML usando out.println() . Por el contrario, los servlets son mejores Páginas con tareas con poca salida, datos binarios o mucho contenido variable [5].</p>
+                    <p>Se recomienda una combinación de ambas tecnologías para proyectos más complejos. Por lo cual nos ayudara para el procesamiento de información y JSP y poder presentar datos al cliente [5].</p>
+
+                    <hr>
+                    <br>
                 </article>
-                
+
                 <article>
                     <div align="center">
                         <img  src="https://data02.123doks.com/thumbv2/123dok_es/000/532/532522/154.892.128.795.177.415/figura-modelo-arquitectura-aplicaciones-jsp.webp" width="400" height="400"  alt="www" />
@@ -214,29 +213,27 @@
                     <h1>Arquitectura de JSP</h1>
                     <p><strong>• El propósito de JSP:</strong> es proporcionar una manera más declarativo, más guiado a manera de realizar una  presentación que la lograda con servlet.</p>
                     <p><strong>• Las páginas JSP:</strong> se utilizan en un proceso que involucra dos fases:</p>
-                                        <div class="cajon-ejemplo">
+                    <div class="cajon-ejemplo">
 
-                    <p>   <strong>1.</strong> Fase de conversión dinámica realizada en servlet crea o modifica una página JSP.</p>
-                    <p>   <strong>2.</strong> Etapa de la respuesta a la solicitud cumplida cuando  se carga la clase del servlet generado contenedor de servlets.</p>
-                                        </div>
-                    <p><strong>• En la segunda fase:</strong> para atender concurrentemente al procesamiento de peticiones,el servidor comienza a procesar la solicitud luz (hilo) para cada cliente ejecute el método <strong>jspService()</strong>.</p>
-                    <p><strong>• El método _jspService():</strong> No se puede anular por otros métodos definidos es por el programador, pero en su lugar puede hacer que personalice la inicialización y la terminación métodos <strong>jspInit() y jspDestroy()</strong>[1].</p>
+                        <p>   <strong>1.</strong> Fase de conversión dinámica realizada en servlet crea o modifica una página JSP.</p>
+                        <p>   <strong>2.</strong> Etapa de la respuesta a la solicitud cumplida cuando  se carga la clase del servlet generado contenedor de servlets.</p>
+                    </div>
+                    <p><strong>• En la segunda fase:</strong> para atender concurrentemente al procesamiento de peticiones,el servidor comienza a procesar la solicitud luz (hilo) para cada cliente ejecute el método <strong>jspService()</strong> [6].</p>
+                    <p><strong>• El método _jspService():</strong> No se puede anular por otros métodos definidos es por el programador, pero en su lugar puede hacer que personalice la inicialización y la terminación métodos <strong>jspInit() y jspDestroy()</strong>[6].</p>
                     <div align="center">
                         <img  src="../../images/arq.png" width="400" height="400"  alt="www" />
                     </div>
-                    <span class="text"> Bibliografía</span>
-                    <div class="cajon-ejemplo">
-                        <p><strong>[1]</strong> V. J. Sosa S Java Server Pages and C. el Servidor Java de Páginas Java Server, “Java Server Pages (JSP)”.</p>
-                    </div>
+                    <br>
+                  
+                    <hr>                
                 </article>
-                
-                
+
                 <article>
+                    <h1>Acciones</h1>
                     <div align="center">
                         <img  src="https://sites.google.com/site/javawebec/_/rsrc/1322799602850/home/jsp/jsp.png.1322799602749.png?height=233&width=320" width="410" height="400"  alt="www" />
                     </div>
 
-                    <h1>Acciones</h1>
                     <p>En JSP existen varios mecanismos para incluir elementos externos en la página actual o
                         redirigir la petición hacia otra página</p>
                     <p><strong>• La directiva include</strong> permite insertar código en la página antes de que ésta se transforme en un servlet por lo cual esto le permitira reutilizar fragmentos de código JSP, HTML.</p>
@@ -275,14 +272,18 @@
                     <p><strong>&lt;jsp:forward page="principal.jsp"&gt;</strong></p>
                     <p><strong>&lt;jsp:param name="privilegios" value="root" /&gt;</strong></p>
                     <p><strong>&lt;/jsp:forward&gt;</strong></p>
-                    <span class="text"> Bibliografía</span>
-                    <div class="cajon-ejemplo">
-                        <p><strong>[1]</strong> “Tecnología JSP (JavaServer Pages) - Documentación de IBM.” https://www.ibm.com/docs/es/rsar/9.5?topic=files-javaserver-pages-jsp-technology (accessed Aug. 11, 2022).</p>
-                        <p><strong>[2]</strong> “R. Casado-Vara, “Parallel and Distributed Systems-237-J2EE-JSP, Serviets y Strusts,” 2019.</p>
-                        <p><strong>[3]</strong> “Tutorial de JSP (10) : action include. « JTagua.” https://jtagua.wordpress.com/2010/10/02/tutorial-de-jsp-10-action-include/ (accessed Aug. 11, 2022).</p>
-
-                    </div>
+                    [3].
+                    <hr>
                 </article>
+                <h2>Bibliografia</h2>
+                <blockquote>[1]	“Tecnología JSP (JavaServer Pages) - Documentación de IBM.” https://www.ibm.com/docs/es/rsar/9.5?topic=files-javaserver-pages-jsp-technology (accessed Aug. 11, 2022). </blockquote>
+                <blockquote>[2]	“R. Casado-Vara, “Parallel and Distributed Systems-237-J2EE-JSP, Serviets y Strusts,” 2019.</blockquote>
+                <blockquote>[3]	A. Walker, “Tutorial de servicios web SOAP: ¿Qué es el protocolo SOAP? EJEMPLO,” Jun. 22, 2022. https://www.guru99.com/soap-simple-object-access-protocol.html </blockquote>
+                <blockquote>[4]	“Tecnología JSP (JavaServer Pages) - Documentación de IBM.” https://www.ibm.com/docs/es/rsar/9.5?topic=files-javaserver-pages-jsp-technology (accessed Aug. 11, 2022).</blockquote>
+                <blockquote>[5]	“Introducción a JSP,” JSP Básico, Mar. 2021. http://www.jtech.ua.es/j2ee/2006-2007/doc/sesion08-apuntes.pdf (accessed Aug. 11, 2022).  </blockquote>
+                <blockquote>[6]	 V. J. Sosa S Java Server Pages and C. el Servidor Java de Páginas Java Server, “Java Server Pages (JSP)”.</blockquote>
+
+
             </div>
             <script src="../../js/style_menu.js"></script>
 

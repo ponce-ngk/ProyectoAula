@@ -7,7 +7,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
     <head>
         <!-- EMCABEZADO -->
         <meta charset="UTF-8">
-        <title> APP WEB | Angular </title>
+        <title> APP WEB | Spring MVC </title>
         <link rel="shortcut icon" type="image/png" href="../../images/clases.png">
         <link rel="stylesheet" href="../../css/style_menu.css">
 
@@ -169,60 +169,36 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
         <section class="home-section">
             <div class="home-content">
                 <i class='bx bx-menu' ></i>
-                <span class="text">Introduccion a las Web Services </span>
+                <span class="text">Introducción al marco Spring Web MVC </span>
                 <span class="arriba bx bxs-up-arrow"></span>
 
                 <article>
                     <div align="center">
-                        <img  src="https://res.cloudinary.com/practicaldev/image/fetch/s--DYfpZirq--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://miro.medium.com/max/990/1%2AOc2PsJ-QKOUG2I8J3HNmWQ.png" width="375" height="230"  alt="www" />
+                        <img  src="https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.ap-northeast-1.amazonaws.com%2F0%2F244937%2F32ef1362-a7c1-185c-b7e9-3ca8f7cfbf49.png?ixlib=rb-4.0.0&auto=format&gif-q=60&q=75&s=b2590379e0465328050fe23cfdd8ba81" width="375" height="230"  alt="www" />
                     </div>
-                    <h2> Historia </h2>
-                    <p>El framework Angular ha sido completamente rediseñado en la versión 2.0, pasando de  AngularJS a Angular. Para no abandonar a los desarrolladores de AngularJS, Google 
-                        continúa apoyando y manteniendo AngularJS. Actualmente, AngularJS está en la versión 1.6.
-                        y Angular está en la versión 
-                        4.0 [1].</p>
+                    <p> El marco  Spring Web Model View Controller (MVC) está diseñado en torno al envío de solicitudes de DispatcherServlet al controlador, con asignación de controlador configurable, resolución de vista, resolución de tema e idioma, así como soporte de carga de archivos de socket. . El controlador predeterminado se basa en las anotaciones @Controllery @RequestMapping, lo que proporciona una variedad de métodos de manejo flexibles. Con la llegada de Spring 3.0, el mecanismo @Controller también le permite crear aplicaciones y sitios web RESTful a través de la anotación @PathVariable y otras características [1].</p>
 
-                    <p>El concepto de Aplicaciones de una sola página (SPA) comenzó a discutirse en 2003, pero no fue hasta 2005 que se utilizó  por primera vez el término. Como podemos ver, es un tipo de aplicación 
-                        relativamente nuevo, sin embargo, su uso se está extendiendo rápidamente y  hoy hemos descubierto su presencia en aplicaciones  conocidas como Gmail, Outlook, Facebook y Twitter [1].</p>
+                    <p>En Spring Web MVC puede usar cualquier objeto como directiva u objeto de soporte de formulario. no necesita implementar una clase base o una interfaz específica del marco de trabajo. El enlace de datos de Spring es muy flexible: por ejemplo, trata los errores de desajuste de tipos como errores de validación que la aplicación puede evaluar, no como errores del sistema. Por lo tanto, no necesita copiar las propiedades de sus objetos comerciales como cadenas simples sin estilo en sus objetos de formulario solo para manejar envíos no válidos o para convertir  cadenas correctamente. En su lugar,  es mejor vincular directamente a sus objetos comerciales [1].</p>
+                    <p>La resolución de pantalla de Spring es extremadamente flexible. El controlador suele ser responsable de preparar el modelo de mapa con los datos y elegir el nombre de la vista, pero también puede escribir directamente en el flujo de respuesta y completar la solicitud. La resolución de nombre de vista es altamente configurable a través de una extensión de archivo o acepta la negociación del tipo de contenido del encabezado, a través del nombre del bean, el archivo de propiedades o incluso una implementación personalizada de ViewResolver [1].</p>
 
-                    <p>El auge de este tipo de aplicaciones se debe en parte a las ventajas que ofrecen frente a otras soluciones, pero sobre todo a la enorme inversión que están haciendo las grandes empresas tecnológicas para desarrollar los frameworks que permitan su desarrollo. Este es el caso de Google con el framework Angular, o Facebook con el framework React.js [1].</p>
+                    <p>El modelo (la M en MVC) es una interfaz de mapa que permite una abstracción completa de la tecnología de visualización. Puede integrarse directamente con tecnologías de representación basadas en modelos, como JSP, Velocity y Freemarker, o generar directamente XML, JSON, Atom y muchos otros tipos de contenido [1].</p>
 
-                    <p>AngularJS fue desarrollado en 2009 por Miško Hevery y Adams Abrons. Originalmente era el software detrás de un servicio de almacenamiento  de archivos JSON en línea, pero 
-                        más tarde, el proyecto se abandonó  y AngularJS se lanzó como una biblioteca de código abierto. Adams Abrons abandonó el proyecto, pero Miško Hevery, como empleado de Google, continúa desarrollando y manteniendo el framework [2].</p>
-                    <hr>
+                    <p>El modelo Map simplemente se transforma en un formato apropiado, como atributos de solicitud JSP, un modelo de plantilla de Velocity [1].</p>
+
                 </article>
+
                 <article>
-                    <h2> Angular JS 1.X </h2>
-                    <p>Fue lanzado inicialmente en octubre de 2010 (hace 7 años).</p>
+                    <h2>Características </h2>
+                    <p><strong>Flujo web de primavera</strong></p>
+                    <p> <strong>.</strong> El marco  Spring Web Model View Controller (MVC) está diseñado en torno al envío de solicitudes de DispatcherServlet al controlador, con asignación de controlador configurable, resolución de vista, resolución de tema e idioma, así como soporte de carga de archivos de socket. . El controlador predeterminado se basa en las anotaciones @Controllery @RequestMapping, lo que proporciona una variedad de métodos de manejo flexibles. Con la llegada de Spring 3.0, el mecanismo @Controller también le permite crear aplicaciones y sitios web RESTful a través de la anotación @PathVariable y otras características [1].</p>
 
-                    <p>Su objetivo es simplificar el desarrollo y las pruebas de aplicaciones al proporcionar un marco para las arquitecturas Model View Control (MVC) y Model View Model (MVVM) para los clientes, así como los componentes que se usan comúnmente en las aplicaciones [2].</p>
+                    <p> <strong>.</strong>  Spring Web Flow (SWF) afirma ser la mejor solución para la gestión del flujo de páginas de aplicaciones web [1].</p>
 
-                    <h2>Angular 2</h2>
-
-                    <p>Fue lanzado en septiembre de 2016.</p>
-
-                    <p>Angular 1.x no está diseñado teniendo en cuenta la compatibilidad móvil, mientras que
-                        Angular 2 está orientado a dispositivos móviles [3].</p>
-                    
-                    <h2>Angular 3</h2>
-                    Se omitió Angular 3.
-
-                    
-                    <p>El framework Angular ha sido completamente rediseñado en la versión 2.0, pasando de  AngularJS a Angular. Para no abandonar a los desarrolladores de AngularJS, Google 
-                        continúa apoyando y manteniendo AngularJS. Actualmente, AngularJS está en la versión 1.6.
-                        y Angular está en la versión 
-                        4.0 [1].</p>
-
-                    <p>El concepto de Aplicaciones de una sola página (SPA) comenzó a discutirse en 2003, pero no fue hasta 2005 que se utilizó  por primera vez el término. Como podemos ver, es un tipo de aplicación 
-                        relativamente nuevo, sin embargo, su uso se está extendiendo rápidamente y  hoy hemos descubierto su presencia en aplicaciones  conocidas como Gmail, Outlook, Facebook y Twitter [1].</p>
-
-                    <p>El auge de este tipo de aplicaciones se debe en parte a las ventajas que ofrecen frente a otras soluciones, pero sobre todo a la enorme inversión que están haciendo las grandes empresas tecnológicas para desarrollar los frameworks que permitan su desarrollo. Este es el caso de Google con el framework Angular, o Facebook con el framework React.js [1].</p>
-
-                    <p>AngularJS fue desarrollado en 2009 por Miško Hevery y Adams Abrons. Originalmente era el software detrás de un servicio de almacenamiento  de archivos JSON en línea, pero 
-                        más tarde, el proyecto se abandonó  y AngularJS se lanzó como una biblioteca de código abierto. Adams Abrons abandonó el proyecto, pero Miško Hevery, como empleado de Google, continúa desarrollando y manteniendo el framework [2].</p>
+                    <p> <strong>.</strong> SWF le permite capturar flujos de páginas lógicas como módulos independientes que se pueden reutilizar en diferentes escenarios. Por lo tanto, es ideal para crear módulos de aplicaciones web que guíen a los usuarios a través de navegaciones controladas para impulsar los procesos comerciales [1].</p>
                 </article>
-
-
+                
+                 <h2>Bibliografia</h2>
+                <blockquote>[1]“17. Web MVC framework.” https://docs.spring.io/spring-framework/docs/3.2.x/spring-framework-reference/html/mvc.html (accessed Sep. 05, 2022).</blockquote>
 
             </div>
             <script src="../../js/style_menu.js"></script>
