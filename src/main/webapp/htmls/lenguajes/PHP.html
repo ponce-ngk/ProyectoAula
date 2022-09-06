@@ -181,6 +181,8 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
 
                     <h2>¿Que es PHP?</h2>
                     <p> <strong>PHP (acrónimo recursivo de PHP: preprocesador de hipertexto)</strong>  es un lenguaje de código abierto muy extendido, especialmente adecuado para el desarrollo web que se puede incrustar en HTML. En lugar de usar muchos comandos para mostrar HTML (como en C o Perl), las páginas PHP contienen HTML con código que hace "algo" (en este caso dice "¡Hola, soy un script PHP!). ¿El código PHP está encerrado en etiquetas especiales de inicio y fin <?php y?> que le permiten insertar y salir de "PHP modo"[1].</p>
+                    <p>Lo que distingue a PHP de algo del lado del cliente como JavaScript es que el código se ejecuta en el servidor, genera HTML y lo envía al cliente. El cliente recibirá el resultado de ejecutar el script, aunque no sabe cuál era el código subyacente. El servidor web también se puede configurar para procesar todos los archivos HTML con PHP, por lo que no hay forma de que los usuarios sepan lo que tienen bajo la manga[2].</p>
+                    <p>Lo mejor de usar PHP es su extrema simplicidad para principiantes, pero al mismo tiempo ofrece muchas funciones avanzadas para programadores profesionales. No tenga miedo de leer la larga lista de características de PHP. En unas horas puedes empezar a escribir tus primeros guiones[1].</p>
                     <hr><h3>Ejemplo</h3>
                     <div class="caja-ejemplo">
                         <pre  class="example">
@@ -200,15 +202,74 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
                         </pre>
                     </div>
                     <hr>
-                    <p>Lo que distingue a PHP de algo del lado del cliente como JavaScript es que el código se ejecuta en el servidor, genera HTML y lo envía al cliente. El cliente recibirá el resultado de ejecutar el script, aunque no sabe cuál era el código subyacente. El servidor web también se puede configurar para procesar todos los archivos HTML con PHP, por lo que no hay forma de que los usuarios sepan lo que tienen bajo la manga[2].</p>
-                    <p>Lo mejor de usar PHP es su extrema simplicidad para principiantes, pero al mismo tiempo ofrece muchas funciones avanzadas para programadores profesionales. No tenga miedo de leer la larga lista de características de PHP. En unas horas puedes empezar a escribir tus primeros guiones[1].</p>
+                    <h2>¿Qué puede hacer PHP?</h2>
+                    <P>Script del lado del servidor. Esta es la zona más tradicional y el foco principal. Se necesitan tres cosas para que funcione: el analizador PHP (módulo o servidor CGI), un servidor web y un navegador web. Debe ejecutar el servidor con una instalación PHP conectada. Se puede acceder a la salida del programa PHP con un navegador al ver la página PHP a través del servidor. Todos estos se pueden ejecutar en su máquina si tiene experiencia con la programación PHP. Para obtener más información, consulte la sección Instrucciones de instalación[2].</P>
+                    <P>Guión de línea de comandos. Se puede crear y ejecutar un script PHP sin necesidad de un servidor o navegador. Solo necesita el analizador PHP para usarlo así. Este tipo de uso es ideal para scripts que se ejecutan regularmente usando cron (en * nix o Linux) o el planificador (en Windows). Estos scripts también se pueden usar para tareas simples de procesamiento de texto. Para obtener más información, consulte Uso de PHP en la línea de comandos[2].</P>
+                    <P>Escribir aplicaciones de escritorio. PHP probablemente no sea el lenguaje más adecuado para crear aplicaciones de escritorio con una interfaz gráfica de usuario, pero si está familiarizado con PHP y desea utilizar algunas características avanzadas de PHP en aplicaciones del lado del cliente, puede utilizar PHP-GTK para escribir dichos programas. De esta forma también es posible escribir aplicaciones independientes de la plataforma. PHP-GTK es una extensión de PHP, no disponible en la distribución principal. Si estás interesado en PHP-GTK, puedes visitar su sitio web[2].</P>
                     <hr>
+                    <h2>Carácteristicas</h2>
+                    <p><strong>•	Fácil de usar: </strong>PHP 5 es un lenguaje muy fácil de aprender en comparación con otros lenguajes utilizados para el mismo propósito como JAVA o ASP. Por ello, no es necesario realizar un estudio muy concienzudo de sus funciones para poder realizar sencillos programas que solucionen la mayoría de nuestros problemas diarios[3].</p>
+                    <p><strong>•	Embebido en HTML: </strong>Las páginas escritas en PHP son páginas HTML simples que contienen, además de las etiquetas normales, el programa que desea ejecutar[3].</p>
+                    <p><strong>•	Multiplataforma: </strong>PHP 5 se ejecuta en muchas plataformas, sistemas operativos y servidores existentes. Es compatible con los tres principales servidores del mercado: Apache, Microsoft Internet Information Server y Netscape Enterprise Server[3].</p>
+                    <p><strong>•	Licencia Open Source: </strong>la licencia de código abierto significa que podemos descargar e inspeccionar el código fuente de PHP 5 de forma gratuita. La principal consecuencia es que el coste del producto en la mayoría de los casos es de 0 euros. Tener el código fuente de PHP 5 es útil, entre otras cosas, para poder construir nuestro servidor personalizado[3].</p>
+                    <p><strong>•	Multitud de Extensiones: </strong>Database Access es una herramienta poderosa que implementa soporte nativo para 15 sistemas populares de administración de bases de datos. Por el lado del protocolo, puede contar con extensiones que controlan el acceso a LDAP, IMAP o POP3. También se ha agregado soporte para crear imágenes en tiempo de ejecución, gracias a la biblioteca GD[3].</p>
+                    <p><strong>•	Velocidad e incorporación de objetos: </strong>El nuevo motor Zend 2.0 acelera los procesos de ejecución de código. Además, incorpora un nuevo modelo de objetos que le permite crear clases y métodos privados, protegidos y públicos, clases abstractas e interfaces[3].</p>
+                    <p><strong>•	Gran comunidad de apoyo: </strong>PHP 5 fue escrito bajo los auspicios de Open Source. Por lo tanto, existe una comunidad que apoya su desarrollo colaborativo. La principal ventaja es que existen muchas páginas, listas de correo y foros de discusión cuyo tema de conversación es el uso de este lenguaje de programación[3].</p>
+                    <hr>
+                    <h2>Operadores de concatenación</h2>
+                    <p>Ambas variables se escriben con el resto del texto que se va a visualizar en el string señalado con las comillas dobles. PHP reconoce automáticamente las variables mediante el símbolo del dólar ($) y coloca tras ellos los valores correspondientes.</p>
+                    <div class="cajon-ejemplo">
+                        <pre>
+                            &lt;?php
+                                $author1 = "John Doe";
+                                $author2 = "Max Mustermann";
+                                echo "&lth1&gtHello World!&lt/h1&gt
+                                &ltp&gtThis dynamic web page was created by $author1 and $author2.&ltp&gt";
+                            ?&gt;
+                            </pre>
+                    </div>
+                    <hr>
+                    <h2>Realización de cálculos con variables</h2>
+                    <div align="center">
+                        <img  src="../../images/ejemplo_php_variables.png" width="675" height="530"  alt="www" />
+                    </div>
+                    <h3>Ejemplo</h3>
+                    <div class="cajon-ejemplo">
+                        <pre>
+                            &lt;?php
+                                $numero1 = 10;
+                                $numero2 = 5;
+                                $adicion = $numero1 + $numero2; 
+                                $sustraccion = $numero1 - $numero2; 
+                                $multiplicacion = $numero1 * $numero2; 
+                                $division = $numero1 / $numero2; 
+                                $exponenciacion = $numero1 ** $numero2; 
+                                ?&gt;
+                                &lt;?php
+                                echo "Resultado de la adición: " . $adicion ."&lt;br /&gt;"; 
+                                echo "Resultado de la sustracción: " . $sustraccion . "&lt;br /&gt;"; 
+                                echo "Resultado de la multiplicación: " . $multiplicacion . "&lt;br /&gt;";
+                                echo "Resultado de la división: " . $division . "&lt;br /&gt;";
+                                echo "10 elevado a la quinta potencia (10^5): " . $exponenciacion . "&lt;br /&gt;";
+                                echo "Raíz de 81: " . sqrt(81) . "&lt;br /&gt;";
+                            ?&gt;
+                            </pre>
+                    </div>
+                    <hr>
+                    <h2>Las superglobals $_GET y $_POST</h2>
+                    <p>Las superglobals<strong>$_GET</strong> y <strong> $_POST </strong> contienen una serie de variables en forma de llaves que permiten llegar a los valores vinculados a dichas llaves. Hablaremos en detalle de este tema cuando nos centremos en las superglobals <strong>$_GET</strong> y <strong> $_POST </strong>.[4]</p>
+                    <p>Una característica importante de los lenguajes de programación es que brindan la capacidad de analizar la entrada del usuario y pasar valores a otros scripts. Para hacer esto, PHP se basa en las superglobales $_GET y $_POST, variables de sistema predefinidas disponibles en todos los dominios de validez. Al igual que las matrices asociativas (campos de datos), $_GET y $_POST almacenan un conjunto de variables como cadenas en una variable[4].</p>
+                    <div align="center">
+                        <img  src="../../images/GET_POST.png" width="975" height="830"  alt="www" />
+                    </div>
+                    <hr>
+
                 </article>
                 <h2>Bibliografia</h2>
-                <blockquote>[1]	M. R. Valarezo Pardo, J. A. Honores Tapia, A. S. Gómez Moreno, and L. F. Vinces Sánchez, “Comparación de tendencias tecnológicas en aplicaciones web,” 3c Tecnología: glosas de innovación aplicadas a la pyme, ISSN-e 2254-4143, Vol. 7, No. 3, 2018, págs. 28-49, vol. 7, no. 3, pp. 28–49, 2018, doi: 10.17993/3ctecno.2018.v7n3e27.28-49/30.</blockquote>
-                <blockquote>[2]	R. E. Roman Arenaza, “LENGUAJES DE PROGRAMACIÓN JAVASCRIPT,” 2019.</blockquote>
-                <blockquote>[3]	F. Tejera-Martínez, D. Aguilera, J. M. Vílchez-González, F. Tejera-Martínez, D. Aguilera, and J. M. Vílchez-González, “Lenguajes de programación y desarrollo de competencias clave. Revisión sistemática,” Revista electrónica de investigación educativa, vol. 22, pp. 1–12, Feb. 2020, doi: 10.24320/REDIE.2020.22.E27.2869.</blockquote>
-                <blockquote>[4]	IONOS, “Los lenguajes de programación para la Web más utilizados - IONOS,” Jan. 24, 2020. https://www.ionos.mx/digitalguide/paginas-web/desarrollo-web/lenguajes-de-programacion-web/ </blockquote>
+                <blockquote>[1]	M. Fossati, Introducción a PHP y HTML. 2018. Accessed: Sep. 04, 2022. [Online]. Available: https://books.google.com.ec/books?hl=es&lr=&id=lWR5DwAAQBAJ&oi=fnd&pg=PA3&dq=php&ots=RB658Pf6_T&sig=8Sh4StOR-X0YKIo7JRMOaURVfy8&redir_esc=y#v=onepage&q=php&f=false</blockquote>
+                <blockquote>[2]	PHP, “PHP: ¿Qué es PHP? - Manual,” Mar. 27, 2019. https://www.php.net/manual/es/intro-whatis.php </blockquote>
+                <blockquote>[3]	R. Henríquez, Desarrollador Web PHP. 2019. Accessed: Sep. 04, 2022. [Online]. Available: https://books.google.com.ec/books?hl=es&lr=lang_es&id=cjBpDwAAQBAJ&oi=fnd&pg=PA1&dq=%22php%22&ots=pHcGaLOAuW&sig=a_2SaHslqxERIYy2ijzuYkb5yhc&redir_esc=y#v=onepage&q=%22php%22&f=false</blockquote>
+                <blockquote>[4]	IONOS, “Tutorial de PHP: fundamentos básicos para principiantes - IONOS,” Mar. 16, 2020. https://www.ionos.es/digitalguide/paginas-web/creacion-de-paginas-</blockquote>
             </div>
             <script src="../../js/style_menu.js"></script>
             <script src="../../js/style_code.js"></script>

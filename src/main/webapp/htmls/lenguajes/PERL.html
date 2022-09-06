@@ -10,6 +10,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
         <title> APP WEB | PERL </title>
         <link rel="shortcut icon" type="image/png" href="../../images/clases.png">
         <link rel="stylesheet" href="../../css/style_menu.css">
+        <link rel="stylesheet" href="../../css/style_code.css">
   
         <!-- Boxiocns CDN Link -->
         <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
@@ -177,13 +178,43 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
                         <img  src="../../images/perl_logo.png" width="375" height="230"  alt="www" />
                     </div>
 
-                    <h2>Arquitecturas y protocolos de las aplicaciones web</h2>
-                    <p><strong>La arquitectura de las aplicaciones Web</strong> es  proporcionada  por  un  servidor  Web  y  utilizada  por  usuarios  que  se Conectan desde cualquier punto vía clientes Web (browsers o navegadores). La arquitectura de un Sitio Web tiene tres componentes principales: un servidor web, una conexión de red, uno o más clientes. El servidor Web distribuye páginas de información formateada a los clientes que las solicitan. Los requerimientos son hechos a través de una conexión de red, y para ello se usa el protocolo HTTP. Una vez que se solicita esta petición mediante el protocolo HTTP y la recibe el servidor Web, éste localiza la página Web en su sistema de archivos y la envía de vuelta al navegador que la solicitó.</p>
-                    <div align="center">
-                        <img  src="https://programacionwebisc.files.wordpress.com/2013/11/3cap.png" width="375" height="230"  alt="www" />
+                    <h2>¿Qué es PEARL?</h2>
+                    <p>Perl es un lenguaje de programación genérico desarrollado originalmente para la manipulación de texto y ahora se usa para una amplia gama de tareas que incluyen administración de sistemas, desarrollo web, programación de redes, desarrollo de GUI, etc[1].</p>
+                    <p>El lenguaje pretende ser práctico (fácil de usar, eficiente, completo) en lugar de lindo (pequeño, elegante, mínimo). Sus características principales son que es fácil de usar, admite programación de procedimientos y orientada a objetos (OO), tiene un potente soporte incorporado para procesamiento de textos y tiene una de las colecciones de módulos de terceros más impresionantes del mundo[1].</p>
+                    <p>Varias definiciones de Perl se dan en perl, perlfaq1 y probablemente en otros lugares. A partir de esto podemos determinar que Perl es un poco diferente de una persona a otra, pero muchas personas encuentran que vale la pena escribir sobre él[1].</p>
+                    <hr>
+                    <h2>¿Qué es POD?</h2> 
+                    <p>Pod es un lenguaje de marcado fácil de usar que se utiliza para escribir documentación para Perl, programas Perl y módulos Perl. Hay varios traductores disponibles para convertir Pod a diferentes formatos como texto sin formato, HTML, páginas man, etc[2]. El marcado de pod consta de tres tipos de párrafo básicos:</p>
+                    <p><strong>•	Párrafo común: </strong>puede usar códigos de formato en párrafos normales, en negrita, en cursiva, estilo de código, hipervínculos y más[2].</p>
+                    <p><strong>•	Párrafo literal: </strong>los párrafos literales generalmente se usan para presentar un bloque de código u otro texto que no requiere un análisis o formato especial y no debe romperse[2].</p>
+                    <p><strong>•	Párrafo de comando: </strong>un párrafo de comando se usa para el manejo especial de fragmentos completos de texto, generalmente como encabezados o partes de listas. Todos los párrafos de comando comienzan con =, seguido de un identificador, seguido de texto arbitrario que el comando puede usar como mejor le parezca[2]. </p>
+                    <hr>
+                    <h3>Los comandos actualmente reconocidos son:</h3>
+                    <div class="cajon-ejemplo2" style="color:red">
+                        <pre>
+                            =pod
+                            =head1 Heading Text
+                            =head2 Heading Text
+                            =head3 Heading Text
+                            =head4 Heading Text
+                            =over indentlevel
+                            =item stuff
+                            =back
+                            =begin format
+                            =end format
+                            =for format text...
+                            =encoding type
+                            =cut
+                        </pre>
                     </div>
+                    <hr>
                 </article>
+                
+                <h2>Bibliografia</h2>
+                <blockquote>[1]	DREAMHOST, “Generalidades de Perl – Centro de Ayuda,” Jun. 13, 2022. https://help.dreamhost.com/hc/es/articles/216512598-Generalidades-de-Perl </blockquote>
+                <blockquote>[2]	PERL MAVEN, “Documentación del núcleo de Perl y los módulos CPAN,” Jul. 22, 2013. https://es.perlmaven.com/documentacion-nucleo-perl-modulos-cpan </blockquote>
             </div>
             <script src="../../js/style_menu.js"></script>
+            <script src="../../js/style_code.js"></script>
         </section>
 </html>

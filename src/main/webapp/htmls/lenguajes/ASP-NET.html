@@ -10,6 +10,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
         <title> APP WEB | ASP.NET </title>
         <link rel="shortcut icon" type="image/png" href="../../images/clases.png">
         <link rel="stylesheet" href="../../css/style_menu.css">
+        <link rel="stylesheet" href="../../css/style_code.css">
   
         <!-- Boxiocns CDN Link -->
         <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
@@ -177,13 +178,76 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
                         <img  src="../../images/asp.net_.logo_.png" width="375" height="230"  alt="www" />
                     </div>
 
-                    <h2>Arquitecturas y protocolos de las aplicaciones web</h2>
-                    <p><strong>La arquitectura de las aplicaciones Web</strong> es  proporcionada  por  un  servidor  Web  y  utilizada  por  usuarios  que  se Conectan desde cualquier punto vía clientes Web (browsers o navegadores). La arquitectura de un Sitio Web tiene tres componentes principales: un servidor web, una conexión de red, uno o más clientes. El servidor Web distribuye páginas de información formateada a los clientes que las solicitan. Los requerimientos son hechos a través de una conexión de red, y para ello se usa el protocolo HTTP. Una vez que se solicita esta petición mediante el protocolo HTTP y la recibe el servidor Web, éste localiza la página Web en su sistema de archivos y la envía de vuelta al navegador que la solicitó.</p>
-                    <div align="center">
-                        <img  src="https://programacionwebisc.files.wordpress.com/2013/11/3cap.png" width="375" height="230"  alt="www" />
+                    <h2>¿Que es ASP .NET?</h2>
+                    <p>ASP.NET es un marco de desarrollo web del lado del servidor altamente desarrollado creado por Microsoft. ASP.NET se utiliza para crear páginas web dinámicas, aplicaciones web y servicios web. Después de décadas de desarrollo, el marco aún existe como ASP.NET Core[1].</p>
+                    <hr>
+                    <h2>ASP.NET: de Active Server Pages al framework</h2>
+                    <p>La funcionalidad básica de ASP se puede comparar con la de PHP o Java Server Pages (JSP). Las tres tecnologías utilizan archivos de plantilla, que contienen fragmentos de código ejecutable incrustados en contenido HTML estático. El código está rodeado de etiquetas especiales para separarlo del HTML. Los dialectos específicos de Microsoft disponibles en ese momento, VBScript, JScript y PerlScript, se utilizaron como lenguajes de programación[1].</p>
+                    <p>Cuando el navegador accede a una URL ("solicitud"), el código se ejecuta en el servidor. La ejecución genera contenido HTML que se incrusta en estructuras HTML predefinidas. Por lo general, el resultado es un documento que consta de contenido HTML estático y generado dinámicamente, que se entrega en respuesta al navegador ("respuesta") y se muestra al usuario. Cualquier cambio en el contenido de la página, por ejemplo, debido a la entrada del usuario, requería un ciclo completo de solicitud-respuesta y luego una recarga de la página[2]. Aquí hay un ejemplo de código ASP:</p>
+                    <hr>
+                    <h3>Ejemplo</h3>
+                    <div class="caja-ejemplo">
+                        <pre  class="example">
+                            <code class="language-markup" style="color:blue">
+                                                    &ltp&gt
+                                                        The server's current time:
+                                                        &lt%
+                                                            Response.Write Now()
+                                                        %&gt
+                                                    &lt/p&gt
+                            </code>
+                        </pre>
                     </div>
+                    <hr>
+                    <h2>Aplicaciones de ASP.NET</h2>
+                    <p><strong>•	Web Forms: </strong>permite el desarrollo rápido de aplicaciones con una rica biblioteca de controles y una experiencia de Visual Studio de arrastrar y soltar[2].</p>
+                    <p><strong>•	MVC: </strong>Permite aplicar los últimos estándares web, realizar TDD y desarrollo basado en dominio (DDD) con la debida separación de responsabilidades en nuestras bibliotecas[2].</p>
+                    <p><strong>•	Páginas web: </strong>combine el código del servidor con HTML para crear contenido web dinámico utilizando la sintaxis de Razor[2].</p>
+                    <p>Los tres marcos ASP.NET se basan en .NET Framework y comparten la funcionalidad básica de .NET y ASP.NET. Por ejemplo, los tres marcos ofrecen un modelo de seguridad de conexión basado en enlaces y los tres comparten las mismas características de manejo de solicitudes, control de sesiones, etc., que son características principales de ASP.NET[3].</p>
+                    <p>Además, los tres marcos no son totalmente independientes y la elección de uno no excluye el uso de otro. Dado que los marcos pueden coexistir en la misma aplicación web, no es raro ver componentes de aplicaciones individuales escritos usando diferentes marcos. Por ejemplo, las partes de una aplicación orientadas al cliente se pueden desarrollar en MVC para optimizar el marcado, mientras que las partes de acceso y administración de datos se desarrollan en formularios web para aprovechar controles simples y acceso a datos[3].</p>
+                    <hr>
+                    <h2>Carácteristicas ASP.NET</h2>
+                    <p><strong>•	Entorno profesional: </strong>como hemos visto, ASP.NET no es solo un marco multiplataforma, sino que ha sido compatible con Microsoft desde su inicio y se ha utilizado en entornos profesionales durante más de 25 años. Promueve buenas prácticas de monitoreo y prueba al proporcionar muchas herramientas, bibliotecas y utilidades[2].</p>
+                    <p><strong>•	Documentación y comunidad: </strong>este framework debe destacarse por su abundante documentación, generada por la numerosa y muy activa comunidad de desarrolladores, comunidad que además participa en la mejora continua. Todo el código de .NET, incluido ASP.NET, está en GitHub y .NET tiene más de 100 000 contribuciones, de hecho, 3700 empresas han contribuido[2].</p>
+                    <p><strong>•	Rendimiento: </strong>Otro punto a destacar son las enormes mejoras de rendimiento que supuso la reescritura del Framework prácticamente desde cero, el rendimiento evoluciona con cada versión y ya nos permite utilizar ASP.NET para desarrollos que requieren gran precisión e inmediatez, como Ejemplos de Aplicaciones. de aprendizaje automático. Es muy interesante ver las comparaciones de TechEmpower Round 20 de donde se toman estos datos[2].</p>
+                    <p><strong>•	Versatilidad</strong>como se mencionó varias veces en este artículo, ASP.NET es multiplataforma, es decir, ya no depende de los sistemas Windows, sino que puede distribuirse en múltiples entornos, incluidos Linux, MacOS, contenedores Docker e incluso en la nube, lo que brinda una versatilidad de la que pocas estructuras pueden estar orgullosas. Además, se integra con interfaces populares como React, Vue y Angular[2].</p>
+                    <hr>
+                    <h2>Razor Pages: evolución de ASP.NET Web Pages</h2>
+                    <p>Razor Pages llena un nicho similar al que ocupaban las páginas web ASP.NET en el pasado. Se utiliza mejor cuando el patrón modelo-vista-controlador genera una sobrecarga innecesaria. Si, por ejemplo, desea crear una página de destino, con Razor Pages esto se puede implementar fácilmente. La sintaxis de Razor se usa para crear la plantilla de página. Como es habitual en el universo .NET, se pueden utilizar C# y Visual Basic como lenguajes de programación[1].
+                        <strong>Tenga en cuenta que @ se usa como un signo de apertura en lugar de las etiquetas de código de apertura y cierre habituales en los lenguajes de modelado:</strong> 
+                    </p>
+                    <h3>Ejemplo</h3>
+                    <div class="caja-ejemplo">
+                        <pre  class="example">
+                            <code class="language-markup" style="color:rgb(7, 163, 98)" >
+                                                @page
+                                                @model HelloWorldModel
+                                                @if (Name != null) {
+                                                    &lt;p&gt;Hello dear @Name&lt;/p&gt;
+                                                }
+                                                &lt;form method="post"&gt;
+                                                    &lt;p&gt;
+                                                        &lt;label asp-for="Name"&gt;&lt;/label&gt;
+                                                        &lt;input class="form-control" asp-for="Name" /&gt;        
+                                                    &lt;/p&gt;
+                                                    &lt;input type="submit" value="Say Hello" /&gt;
+                                                &lt;/form&gt;
+                            </code>
+                        </pre>
+                    </div>
+                <hr>
+                <div align="center">
+                    <img  src="../../images/Ejemplos_ASP.png" width="975" height="830"  alt="www" />
+                </div>
+                <hr>
+
                 </article>
+                <h2>Bibliografia</h2>
+                <blockquote>[1]	IONOS, “ASP.NET: de lenguaje de script de Microsoft a framework web abierto - IONOS,” Jan. 07, 2022. https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/que-es-aspnet/  </blockquote>
+                <blockquote>[2]	J. G. Carmona, “Qué es ASP.NET y cuáles son sus puntos fuertes ,” Mar. 18, 2022. https://openwebinars.net/blog/que-es-aspnet-y-cuales-son-sus-puntos-fuertes/  </blockquote>
+                <blockquote>[3]	MICROSOFT, “ASP.NET información general ,” Nov. 07, 2022. https://docs.microsoft.com/es-es/aspnet/overview </blockquote>
             </div>
             <script src="../../js/style_menu.js"></script>
+            <script src="../../js/style_code.js"></script>
         </section>
 </html>
