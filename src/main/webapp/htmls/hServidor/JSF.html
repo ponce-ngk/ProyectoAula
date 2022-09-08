@@ -175,13 +175,48 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
                     <div align="center">
                         <img  src="../../images/jsf.png" width="375" height="230"  alt="www" />
                     </div>
+                    <br>
+                    <p>La tecnología JavaServer Faces simplifica la creación de interfaces de usuario para aplicaciones JavaServer. Los desarrolladores pueden crear aplicaciones web ensamblando componentes de interfaz de usuario reutilizables en una página; conectar estos componentes a una fuente de datos de aplicación; y conectar eventos generados por el cliente a controladores de eventos del lado del servidor. Este proyecto proporciona información sobre el desarrollo en curso de la especificación JavaServer Faces[1].</p>
+                    <p>JavaServer Faces (JSF) es una tecnología JCP estándar para crear interfaces de usuario basadas en componentes en la plataforma Java EE. Este proyecto de GitHub en particular alberga el rastreador de problemas de especificación oficial de JSF. Hay tres implementaciones de la especificación JSF, todas desarrolladas bajo licencias de código abierto aprobadas por OSI[1].</p>
+                    <hr>
+                    <h3>Implementacion de JSF 2.3</h3>
+                    
+                    <p>JSF 2.3 y Java EE 8 están completos. Las implementaciones ejecutables de los hitos JSF 2.3, así como otras versiones, están disponibles en el repositorio javax.faces. Esta versión está incluida en GlssFish 5 Builds.</p>
 
-                    <h2>Arquitecturas y protocolos de las aplicaciones web</h2>
-                    <p><strong>La arquitectura de las aplicaciones Web</strong> es  proporcionada  por  un  servidor  Web  y  utilizada  por  usuarios  que  se Conectan desde cualquier punto vía clientes Web (browsers o navegadores). La arquitectura de un Sitio Web tiene tres componentes principales: un servidor web, una conexión de red, uno o más clientes. El servidor Web distribuye páginas de información formateada a los clientes que las solicitan. Los requerimientos son hechos a través de una conexión de red, y para ello se usa el protocolo HTTP. Una vez que se solicita esta petición mediante el protocolo HTTP y la recibe el servidor Web, éste localiza la página Web en su sistema de archivos y la envía de vuelta al navegador que la solicitó.</p>
+                    <p>La especificación legible por humanos puede descargarse de http://jcp.org/.</p>
+                        
+                    <p>La API está disponible en Maven Central en estas coordenadas.</p></p>
 
+                    <div class="cajon-ejemplo2" style="color:rgb(0, 140, 255)">
+                        <pre>
+                            &ltdependency>
+                                &ltgroupId>javax.faces&lt/groupId&gt
+                                &ltartifactId>javax.faces-api&lt/artifactId&gt
+                                &ltversion>2.3&lt/version&gt
+                                &ltscope>provided&lt/scope&gt
+                            &lt/dependency&gt
+                        </pre>
+                    </div>
+                    <p>The implementation is also available at these coordinates.</p>
+                    <div class="cajon-ejemplo2" style="color:rgb(0, 140, 255)">
+                        <pre>
+                            &ltdependency&gt
+                                &ltgroupId>org.glassfish&lt/groupId&gt
+                                &ltartifactId>javax.faces&lt/artifactId&gt
+                                &ltversion>2.3.8&lt/version&gt
+                                &ltscope>provided&lt/scope&gt
+                            &lt/dependency&gt
+                        </pre>
+                    </div>
 
-
+                    <p>Por lo general, las aplicaciones web que utilizan esta API/Marco incluyen la API JSF y los archivos Java Archive (JAR) de implementación en el archivo Web Application Archive (WAR). Esto no es necesario cuando estas aplicaciones web se implementan y ejecutan en WebSphere Application Server. Simplemente elimine estos archivos JAR junto con los archivos JSTL JAR del archivo WAR. Sin embargo, debido a que JavaServer Faces 2.2 es parte de Java Platform, Enterprise Edition (Java EE), una implementación de JavaServer Faces no se encapsula en una aplicación web cuando se ejecuta en un contenedor web compatible con la tecnología Java EE. JavaServer Faces se incluye con una aplicación web, se ignora porque la implementación de JavaServer Faces proporcionada por la plataforma siempre tiene prioridad[2].</p>
+                    <p>El entorno de tiempo de ejecución de JSF para WebSphere Application Server no admite el uso de un único cargador de clases para toda la aplicación, ya que la inicialización de FacesConfig requiere un único cargador de clases para cada módulo JSF durante el inicio. Este soporte no está disponible cuando la aplicación contiene varios módulos web y uno de estos módulos es un módulo JSF. Por lo tanto, debe usar varios cargadores de clases cuando su aplicación contiene varios módulos web y al menos un módulo JSF[2].</p> 
+                    <p>Si una aplicación utiliza la implementación JSF proporcionada de MyFaces, no es necesario agregar org.apache.myfaces.StartupConfigureListener al archivo web.xml[2].</p>   
+                    <hr>
                 </article>
+                <h2>Bibliografia</h2>
+                <blockquote>[1]	Github, “JAVA SERVER FACES - SPEC,” Apr. 17, 2004. https://javaee.github.io/javaserverfaces-spec/ </blockquote>
+                <blockquote>[2]	IBM, “JavaServer Faces - Documentación de IBM,” Jun. 19, 2021. https://www.ibm.com/docs/es/was/9.0.5?topic=files-javaserver-faces </blockquote>
             </div>
             <script src="../../js/style_menu.js"></script>
         </section>
