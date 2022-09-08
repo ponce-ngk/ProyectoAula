@@ -10,7 +10,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
         <title> APP WEB | Spring MVC </title>
         <link rel="shortcut icon" type="image/png" href="../../images/clases.png">
         <link rel="stylesheet" href="../../css/style_menu.css">
-
+        <link rel="stylesheet" href="../../css/style_code.css">
         <!-- Boxiocns CDN Link -->
         <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -196,10 +196,39 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
                     <p> <strong>.</strong> SWF le permite capturar flujos de páginas lógicas como módulos independientes que se pueden reutilizar en diferentes escenarios. Por lo tanto, es ideal para crear módulos de aplicaciones web que guíen a los usuarios a través de navegaciones controladas para impulsar los procesos comerciales [1].</p>
                 </article>
                 
+                 <article>
+                    <h2>Configuración básica </h2>
+                    <p>Lo común es que se configure la aplicación web  de forma que todas las peticiones cuya URL sigue un determinado patrón pasen a través de Spring MVC.  Así, por ejemplo, podemos "redirigir" a través de Spring MVC todas las peticiones que acaben en ".do".</p>
+                    <p>Esto te permitira por ejemplo servir los recursos estáticos aparte, ya que no es necesario que estos pasen por el flujo de ejecución MVC.</p>
+         
+                    <h3>Ejemplo</h3>
+                    <div class="caja-ejemplo">
+                        <pre  class="example">
+                            <code class="language-markup" style="color:rgb(7, 163, 98)" >
+                                 &lt;servlet&gt;
+                                  &lt;servlet-name&gt; dispatcher &lt;/servlet-name&gt;
+                                  &lt;servlet-class&gt;
+                                  org.springframework.web.servlet.DispatcherServlet
+                                  &lt;/servlet-class&gt;
+                                  &lt;load-on-startup&gt;1 &lt;/load-on-startup&gt; 
+                                  &lt;/servlet&gt;
+                                  &lt;servlet-mapping&gt;
+                                  &lt;servlet-name&gt; dispatcher &lt;/servlet-name&gt;
+                                  &lt;url-pattern&gt; *.do &lt;/url-pattern&gt;
+                            </code>
+                        </pre>
+                    </div>
+                 </article>
+                
+                
+                
+                
+                
                  <h2>Bibliografia</h2>
                 <blockquote>[1]“17. Web MVC framework.” https://docs.spring.io/spring-framework/docs/3.2.x/spring-framework-reference/html/mvc.html (accessed Sep. 05, 2022).</blockquote>
 
             </div>
             <script src="../../js/style_menu.js"></script>
+            <script src="../../js/style_code.js"></script>
         </section>
 </html>
