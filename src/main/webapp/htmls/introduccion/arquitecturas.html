@@ -34,14 +34,14 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
             <ul class="nav-links">
                 <li>
                     <div class="iocn-link">
-                        <a href="../../htmls/introduccion/introduccion-APP-WEB.html">
+                        <a href="../../index.html">
                             <i class="fas fa-atlas"></i>
                             <span class="link_name">Introducción</span>
                         </a>
                         <i class='bx bxs-chevron-down arrow' ></i>
                     </div>
                     <ul class="sub-menu">
-                        <li><a class="link_name" href="../../htmls/introduccion/introduccion-APP-WEB.html">Introduccion a las APP WEB</a></li>
+                        <li><a class="link_name" href="../../index.html">Introduccion a las APP WEB</a></li>
                         <li><a href="../../htmls/introduccion/conceptos.html">Conceptos y definiciones</a></li>
                         <li><a href="../../htmls/introduccion/arquitecturas.html">Arquitecturas y protocolos</a></li>
                         <li><a href="../../htmls/introduccion/servidorWEB.html">Servidores web</a></li>
@@ -101,10 +101,8 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
                         <li><a class="link_name" href="../../htmls/hServidor/hServidor-Introduccion.html">Herramientas de servidor</a></li>
                         <li><a href="../../htmls/hServidor/appJava.html">Aplicaciones JAVA</a></li>
                         <li><a href="../../htmls/hServidor/JAVA.html">Java</a></li>
-                        <li><a href="../../htmls/hServidor/JS.html">JS</a></li>
                         <li><a href="../../htmls/hServidor/JSP.html">JSP</a></li>
                         <li><a href="../../htmls/hServidor/JSF.html">JSF</a></li>
-                        <li><a href="../../htmls/hServidor/Framework.html">Framework</a></li>
                         <li><a href="../../htmls/hServidor/springBoot.html">SpringBoot</a></li>
                         <li><a href="../../htmls/hServidor/springMVC.html">Spring MVC</a></li>
                     </ul>
@@ -175,14 +173,28 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
 
                 <article>
                     <div align="center">
-                        <img  src="images/logo_home.png" width="375" height="230"  alt="www" />
+                        <img  src="../../images/arquitectura_web.png" width="475" height="330"  alt="www" />
                     </div>
 
                     <h2>Arquitecturas y protocolos de las aplicaciones web</h2>
+
                     <p><strong>La arquitectura de las aplicaciones Web</strong> es  proporcionada  por  un  servidor  Web  y  utilizada  por  usuarios  que  se Conectan desde cualquier punto vía clientes Web (browsers o navegadores). La arquitectura de un Sitio Web tiene tres componentes principales: un servidor web, una conexión de red, uno o más clientes. El servidor Web distribuye páginas de información formateada a los clientes que las solicitan. Los requerimientos son hechos a través de una conexión de red, y para ello se usa el protocolo HTTP. Una vez que se solicita esta petición mediante el protocolo HTTP y la recibe el servidor Web, éste localiza la página Web en su sistema de archivos y la envía de vuelta al navegador que la solicitó.</p>
                     <div align="center">
                         <img  src="https://programacionwebisc.files.wordpress.com/2013/11/3cap.png" width="375" height="230"  alt="www" />
                     </div>
+                    <p><strong>Los protocolos de las aplicaciones web </strong> se construye sobre el protocolo de transmisión TCP (Transmision Control Protocol), y sobre un sistema de identificación de los computadores que la forman basado en el protocolo IP:
+                    <p><strong>❇ TCP:</strong> realiza el empaquetamiento de los datos a transmitir y el chequeo de errores de la transmisión y reenvío de paquetes erróneos. UDP (User Datagram Protocol) es un protocolo más simple que no realiza control de errores</p>
+                    <p><strong>❇ IP:</strong> define una dirección IP para cada ordenador de la red. Esta es un número de 32 bits, que se suele representar en decimal, separando los 4 bytes por puntos (por ejemplo, "192.168.12.1". Normalmente se utilizan nombres simbólicos para referirse a estas direcciones numéricas (como por ejemplo "www.ua.es")</p>
+                    <p><strong>❇ POST:</strong> Este método se lo utiliza para realizar cambios en el estado del servidor por medio de una entidad que es enviada a un recurso específico. </p>
+                    <p><strong>❇ GET:</strong> Se utiliza para solicitar una representación de un recurso específico. Este método debe ser usado en peticiones que solamente soliciten datos, es decir para consulta de recursos. </p>
+                    <p><strong>❇ HEAD:</strong> En aplicaciones REST, el método HEAD pide una respuesta idéntica al método GET, pero sin el cuerpo de la respuesta. </p>
+                    <p><strong>❇ PUT:</strong> Las solicitudes del método PUT para la entidad adjunta se almacenan en la URI de la solicitud suministrada. </p>
+                    <p><strong>❇ DELETE:</strong> Este método es el más obvio en su función. Sirve para borrar un recurso específico, es decir, identificado por la URI de la solicitud. </p>
+                    <p><strong>❇ CONNECT:</strong> Este método HTTP se utiliza para solicitar al servidor una conexión de tipo túnel TCP/IP. </p>
+                    <p><strong>❇ OPTIONS:</strong> Sirve para determinar qué métodos HTTP soporta el servidor web con respecto a un recurso en concreto.</p>
+                    <p><strong>❇ TRACE:</strong> HTTP también tiene un método para monitorizar los mensajes que haya entre el cliente y el servidor web, para esto es el método TRACE. </p>
+                    <p><strong>❇ PATCH:</strong> Este método HTTP sirve para realizar solicitudes para la actualización parcial de un recurso. </p>
+                    <br>
                 </article>
             </div>
             <script src="../../js/style_menu.js"></script>
